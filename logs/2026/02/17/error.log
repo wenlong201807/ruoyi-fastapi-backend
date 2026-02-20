@@ -1,0 +1,14 @@
+2026-02-17 02:03:20.486 | WARNING  | logging:callHandlers:1736 - Integer display width is deprecated and will be removed in a future release.
+2026-02-17 02:03:20.487 | WARNING  | logging:callHandlers:1736 - Integer display width is deprecated and will be removed in a future release.
+2026-02-17 02:09:25.500 | WARNING  | module_admin.service.login_service:authenticate_user:106 - 用户不存在
+2026-02-17 02:09:25.500 | WARNING  | common.annotation.log_annotation:wrapper:89 - 用户不存在
+2026-02-17 02:14:36.108 | WARNING  | module_admin.service.login_service:authenticate_user:106 - 用户不存在
+2026-02-17 02:14:36.108 | WARNING  | common.annotation.log_annotation:wrapper:89 - 用户不存在
+2026-02-17 02:16:03.731 | ERROR    | exceptions.handle:service_exception_handler:52 - 注册程序已关闭，禁止注册
+2026-02-17 02:18:56.781 | ERROR    | exceptions.handle:service_exception_handler:52 - 注册程序已关闭，禁止注册
+2026-02-17 02:24:17.280 | ERROR    | exceptions.handle:service_exception_handler:52 - 注册程序已关闭，禁止注册
+2026-02-17 02:26:20.063 | ERROR    | exceptions.handle:service_exception_handler:52 - 注册程序已关闭，禁止注册
+2026-02-17 03:05:02.885 | WARNING  | config.get_scheduler:on_lock_lost:273 - ⚠️ Worker 6820-ff93ac 失去 Application 锁
+2026-02-17 22:34:59.244 | WARNING  | module_admin.service.login_service:get_current_user:276 - 用户token已失效，请重新登录
+2026-02-18 21:58:41.298 | WARNING  | module_admin.service.login_service:authenticate_user:106 - 用户不存在
+2026-02-18 21:58:41.299 | WARNING  | common.annotation.log_annotation:wrapper:89 - 用户不存在

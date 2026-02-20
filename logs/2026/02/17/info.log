@@ -1,0 +1,1746 @@
+2026-02-17 01:48:01.266 | INFO     | server:lifespan:89 - ⏰️ RuoYi-FastAPI开始启动
+2026-02-17 01:48:01.266 | INFO     | utils.common_util:worship:22 - 
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG                  //
+////////////////////////////////////////////////////////////////////
+    
+2026-02-17 01:48:01.266 | INFO     | config.get_db:init_create_table:25 - 🔎 初始化数据库连接...
+2026-02-17 01:48:01.279 | INFO     | logging:callHandlers:1736 - SELECT DATABASE()
+2026-02-17 01:48:01.279 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.282 | INFO     | logging:callHandlers:1736 - SELECT @@sql_mode
+2026-02-17 01:48:01.282 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.283 | INFO     | logging:callHandlers:1736 - SELECT @@lower_case_table_names
+2026-02-17 01:48:01.283 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.287 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 01:48:01.287 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_config`
+2026-02-17 01:48:01.288 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.294 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_type`
+2026-02-17 01:48:01.295 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.297 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_data`
+2026-02-17 01:48:01.297 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.299 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job`
+2026-02-17 01:48:01.300 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.301 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job_log`
+2026-02-17 01:48:01.301 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.302 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_logininfor`
+2026-02-17 01:48:01.302 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.303 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_oper_log`
+2026-02-17 01:48:01.303 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.304 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dept`
+2026-02-17 01:48:01.304 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.304 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user`
+2026-02-17 01:48:01.305 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.307 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_role`
+2026-02-17 01:48:01.307 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.308 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_post`
+2026-02-17 01:48:01.308 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.308 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_menu`
+2026-02-17 01:48:01.309 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.309 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_post`
+2026-02-17 01:48:01.309 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.310 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role`
+2026-02-17 01:48:01.310 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.311 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_dept`
+2026-02-17 01:48:01.311 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.312 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_menu`
+2026-02-17 01:48:01.312 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.312 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_notice`
+2026-02-17 01:48:01.312 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.313 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_chat_config`
+2026-02-17 01:48:01.313 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.314 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_models`
+2026-02-17 01:48:01.314 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.315 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table`
+2026-02-17 01:48:01.315 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.316 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table_column`
+2026-02-17 01:48:01.316 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 01:48:01.317 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_config (
+	config_id INTEGER NOT NULL COMMENT '参数主键' AUTO_INCREMENT, 
+	config_name VARCHAR(100) COMMENT '参数名称' DEFAULT '''''', 
+	config_key VARCHAR(100) COMMENT '参数键名' DEFAULT '''''', 
+	config_value VARCHAR(500) COMMENT '参数键值' DEFAULT '''''', 
+	config_type CHAR(1) COMMENT '系统内置（Y是 N否）' DEFAULT 'N', 
+	create_by VARCHAR(64) COMMENT '创建者' DEFAULT '''''', 
+	create_time DATETIME COMMENT '创建时间', 
+	update_by VARCHAR(64) COMMENT '更新者' DEFAULT '''''', 
+	update_time DATETIME COMMENT '更新时间', 
+	remark VARCHAR(500) COMMENT '备注', 
+	PRIMARY KEY (config_id)
+)COMMENT='参数配置表'
+
+
+2026-02-17 01:48:01.318 | INFO     | logging:callHandlers:1736 - [no key 0.00033s] ()
+2026-02-17 01:48:01.337 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_dict_type (
+	dict_id BIGINT NOT NULL COMMENT '字典主键' AUTO_INCREMENT, 
+	dict_name VARCHAR(100) COMMENT '字典名称' DEFAULT '''''', 
+	dict_type VARCHAR(100) COMMENT '字典类型' DEFAULT '''''', 
+	status CHAR(1) COMMENT '状态（0正常 1停用）' DEFAULT '0', 
+	create_by VARCHAR(64) COMMENT '创建者' DEFAULT '''''', 
+	create_time DATETIME COMMENT '创建时间', 
+	update_by VARCHAR(64) COMMENT '更新者' DEFAULT '''''', 
+	update_time DATETIME COMMENT '更新时间', 
+	remark VARCHAR(500) COMMENT '备注', 
+	PRIMARY KEY (dict_id), 
+	UNIQUE (dict_type)
+)COMMENT='字典类型表'
+
+
+2026-02-17 01:48:01.338 | INFO     | logging:callHandlers:1736 - [no key 0.00033s] ()
+2026-02-17 01:48:01.357 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_dict_data (
+	dict_code BIGINT NOT NULL COMMENT '字典编码' AUTO_INCREMENT, 
+	dict_sort INTEGER COMMENT '字典排序' DEFAULT '0', 
+	dict_label VARCHAR(100) COMMENT '字典标签' DEFAULT '''''', 
+	dict_value VARCHAR(100) COMMENT '字典键值' DEFAULT '''''', 
+	dict_type VARCHAR(100) COMMENT '字典类型' DEFAULT '''''', 
+	css_class VARCHAR(100) COMMENT '样式属性（其他样式扩展）', 
+	list_class VARCHAR(100) COMMENT '表格回显样式', 
+	is_default CHAR(1) COMMENT '是否默认（Y是 N否）' DEFAULT 'N', 
+	status CHAR(1) COMMENT '状态（0正常 1停用）' DEFAULT '0', 
+	create_by VARCHAR(64) COMMENT '创建者' DEFAULT '''''', 
+	create_time DATETIME COMMENT '创建时间', 
+	update_by VARCHAR(64) COMMENT '更新者' DEFAULT '''''', 
+	update_time DATETIME COMMENT '更新时间', 
+	remark VARCHAR(500) COMMENT '备注', 
+	PRIMARY KEY (dict_code)
+)COMMENT='字典数据表'
+
+
+2026-02-17 01:48:01.357 | INFO     | logging:callHandlers:1736 - [no key 0.00023s] ()
+2026-02-17 01:48:01.376 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_job (
+	job_id BIGINT NOT NULL COMMENT '任务ID' AUTO_INCREMENT, 
+	job_name VARCHAR(64) NOT NULL COMMENT '任务名称' DEFAULT '''''', 
+	job_group VARCHAR(64) NOT NULL COMMENT '任务组名' DEFAULT 'default', 
+	job_executor VARCHAR(64) COMMENT '任务执行器' DEFAULT 'default', 
+	invoke_target VARCHAR(500) NOT NULL COMMENT '调用目标字符串', 
+	job_args VARCHAR(255) COMMENT '位置参数' DEFAULT '''''', 
+	job_kwargs VARCHAR(255) COMMENT '关键字参数' DEFAULT '''''', 
+	cron_expression VARCHAR(255) COMMENT 'cron执行表达式' DEFAULT '''''', 
+	misfire_policy VARCHAR(20) COMMENT '计划执行错误策略（1立即执行 2执行一次 3放弃执行）' DEFAULT '3', 
+	concurrent CHAR(1) COMMENT '是否并发执行（0允许 1禁止）' DEFAULT '1', 
+	status CHAR(1) COMMENT '状态（0正常 1暂停）' DEFAULT '0', 
+	create_by VARCHAR(64) COMMENT '创建者' DEFAULT '''''', 
+	create_time DATETIME COMMENT '创建时间', 
+	update_by VARCHAR(64) COMMENT '更新者' DEFAULT '''''', 
+	update_time DATETIME COMMENT '更新时间', 
+	remark VARCHAR(500) COMMENT '备注信息' DEFAULT '''''', 
+	PRIMARY KEY (job_id, job_name, job_group)
+)COMMENT='定时任务调度表'
+
+
+2026-02-17 01:48:01.377 | INFO     | logging:callHandlers:1736 - [no key 0.00028s] ()
+2026-02-17 01:48:01.397 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_job_log (
+	job_log_id BIGINT NOT NULL COMMENT '任务日志ID' AUTO_INCREMENT, 
+	job_name VARCHAR(64) NOT NULL COMMENT '任务名称', 
+	job_group VARCHAR(64) NOT NULL COMMENT '任务组名', 
+	job_executor VARCHAR(64) NOT NULL COMMENT '任务执行器', 
+	invoke_target VARCHAR(500) NOT NULL COMMENT '调用目标字符串', 
+	job_args VARCHAR(255) COMMENT '位置参数' DEFAULT '''''', 
+	job_kwargs VARCHAR(255) COMMENT '关键字参数' DEFAULT '''''', 
+	job_trigger VARCHAR(255) COMMENT '任务触发器' DEFAULT '''''', 
+	job_message VARCHAR(500) COMMENT '日志信息', 
+	status CHAR(1) COMMENT '执行状态（0正常 1失败）' DEFAULT '0', 
+	exception_info VARCHAR(2000) COMMENT '异常信息' DEFAULT '''''', 
+	create_time DATETIME COMMENT '创建时间', 
+	PRIMARY KEY (job_log_id)
+)COMMENT='定时任务调度日志表'
+
+
+2026-02-17 01:48:01.397 | INFO     | logging:callHandlers:1736 - [no key 0.00052s] ()
+2026-02-17 01:48:01.453 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_logininfor (
+	info_id BIGINT NOT NULL COMMENT '访问ID' AUTO_INCREMENT, 
+	user_name VARCHAR(50) COMMENT '用户账号' DEFAULT '''''', 
+	ipaddr VARCHAR(128) COMMENT '登录IP地址' DEFAULT '''''', 
+	login_location VARCHAR(255) COMMENT '登录地点' DEFAULT '''''', 
+	browser VARCHAR(50) COMMENT '浏览器类型' DEFAULT '''''', 
+	os VARCHAR(50) COMMENT '操作系统' DEFAULT '''''', 
+	status CHAR(1) COMMENT '登录状态（0成功 1失败）' DEFAULT '0', 
+	msg VARCHAR(255) COMMENT '提示消息' DEFAULT '''''', 
+	login_time DATETIME COMMENT '访问时间', 
+	PRIMARY KEY (info_id)
+)COMMENT='系统访问记录'
+
+
+2026-02-17 01:48:01.453 | INFO     | logging:callHandlers:1736 - [no key 0.00026s] ()
+2026-02-17 01:48:01.472 | INFO     | logging:callHandlers:1736 - CREATE INDEX idx_sys_logininfor_s ON sys_logininfor (status)
+2026-02-17 01:48:01.473 | INFO     | logging:callHandlers:1736 - [no key 0.00029s] ()
+2026-02-17 01:48:01.496 | INFO     | logging:callHandlers:1736 - CREATE INDEX idx_sys_logininfor_lt ON sys_logininfor (login_time)
+2026-02-17 01:48:01.496 | INFO     | logging:callHandlers:1736 - [no key 0.00023s] ()
+2026-02-17 01:48:01.507 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_oper_log (
+	oper_id BIGINT NOT NULL COMMENT '日志主键' AUTO_INCREMENT, 
+	title VARCHAR(50) COMMENT '模块标题' DEFAULT '''''', 
+	business_type INTEGER COMMENT '业务类型（0其它 1新增 2修改 3删除）' DEFAULT '0', 
+	method VARCHAR(100) COMMENT '方法名称' DEFAULT '''''', 
+	request_method VARCHAR(10) COMMENT '请求方式' DEFAULT '''''', 
+	operator_type INTEGER COMMENT '操作类别（0其它 1后台用户 2手机端用户）' DEFAULT '0', 
+	oper_name VARCHAR(50) COMMENT '操作人员' DEFAULT '''''', 
+	dept_name VARCHAR(50) COMMENT '部门名称' DEFAULT '''''', 
+	oper_url VARCHAR(255) COMMENT '请求URL' DEFAULT '''''', 
+	oper_ip VARCHAR(128) COMMENT '主机地址' DEFAULT '''''', 
+	oper_location VARCHAR(255) COMMENT '操作地点' DEFAULT '''''', 
+	oper_param VARCHAR(2000) COMMENT '请求参数' DEFAULT '''''', 
+	json_result VARCHAR(2000) COMMENT '返回参数' DEFAULT '''''', 
+	status INTEGER COMMENT '操作状态（0正常 1异常）' DEFAULT '0', 
+	error_msg VARCHAR(2000) COMMENT '错误消息' DEFAULT '''''', 
+	oper_time DATETIME COMMENT '操作时间', 
+	cost_time BIGINT COMMENT '消耗时间' DEFAULT '0', 
+	PRIMARY KEY (oper_id)
+)COMMENT='操作日志记录'
+
+
+2026-02-17 01:48:01.507 | INFO     | logging:callHandlers:1736 - [no key 0.00036s] ()
+2026-02-17 01:48:01.523 | INFO     | logging:callHandlers:1736 - CREATE INDEX idx_sys_oper_log_s ON sys_oper_log (status)
+2026-02-17 01:48:01.523 | INFO     | logging:callHandlers:1736 - [no key 0.00022s] ()
+2026-02-17 01:48:01.532 | INFO     | logging:callHandlers:1736 - CREATE INDEX idx_sys_oper_log_bt ON sys_oper_log (business_type)
+2026-02-17 01:48:01.533 | INFO     | logging:callHandlers:1736 - [no key 0.00022s] ()
+2026-02-17 01:48:01.541 | INFO     | logging:callHandlers:1736 - CREATE INDEX idx_sys_oper_log_ot ON sys_oper_log (oper_time)
+2026-02-17 01:48:01.541 | INFO     | logging:callHandlers:1736 - [no key 0.00021s] ()
+2026-02-17 01:48:01.552 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_dept (
+	dept_id BIGINT NOT NULL COMMENT '部门id' AUTO_INCREMENT, 
+	parent_id BIGINT COMMENT '父部门id' DEFAULT '0', 
+	ancestors VARCHAR(50) COMMENT '祖级列表' DEFAULT '''''', 
+	dept_name VARCHAR(30) COMMENT '部门名称' DEFAULT '''''', 
+	order_num INTEGER COMMENT '显示顺序' DEFAULT '0', 
+	leader VARCHAR(20) COMMENT '负责人', 
+	phone VARCHAR(11) COMMENT '联系电话', 
+	email VARCHAR(50) COMMENT '邮箱', 
+	status CHAR(1) COMMENT '部门状态（0正常 1停用）' DEFAULT '0', 
+	del_flag CHAR(1) COMMENT '删除标志（0代表存在 2代表删除）' DEFAULT '0', 
+	create_by VARCHAR(64) COMMENT '创建者' DEFAULT '''''', 
+	create_time DATETIME COMMENT '创建时间', 
+	update_by VARCHAR(64) COMMENT '更新者' DEFAULT '''''', 
+	update_time DATETIME COMMENT '更新时间', 
+	PRIMARY KEY (dept_id)
+)COMMENT='部门表'
+
+
+2026-02-17 01:48:01.552 | INFO     | logging:callHandlers:1736 - [no key 0.00028s] ()
+2026-02-17 01:48:01.565 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_user (
+	user_id BIGINT NOT NULL COMMENT '用户ID' AUTO_INCREMENT, 
+	dept_id BIGINT COMMENT '部门ID', 
+	user_name VARCHAR(30) NOT NULL COMMENT '用户账号', 
+	nick_name VARCHAR(30) NOT NULL COMMENT '用户昵称', 
+	user_type VARCHAR(2) COMMENT '用户类型（00系统用户）' DEFAULT '00', 
+	email VARCHAR(50) COMMENT '用户邮箱' DEFAULT '''''', 
+	phonenumber VARCHAR(11) COMMENT '手机号码' DEFAULT '''''', 
+	sex CHAR(1) COMMENT '用户性别（0男 1女 2未知）' DEFAULT '0', 
+	avatar VARCHAR(100) COMMENT '头像地址' DEFAULT '''''', 
+	password VARCHAR(100) COMMENT '密码' DEFAULT '''''', 
+	status CHAR(1) COMMENT '帐号状态（0正常 1停用）' DEFAULT '0', 
+	del_flag CHAR(1) COMMENT '删除标志（0代表存在 2代表删除）' DEFAULT '0', 
+	login_ip VARCHAR(128) COMMENT '最后登录IP' DEFAULT '''''', 
+	login_date DATETIME COMMENT '最后登录时间', 
+	pwd_update_date DATETIME COMMENT '密码最后更新时间', 
+	create_by VARCHAR(64) COMMENT '创建者' DEFAULT '''''', 
+	create_time DATETIME COMMENT '创建时间', 
+	update_by VARCHAR(64) COMMENT '更新者' DEFAULT '''''', 
+	update_time DATETIME COMMENT '更新时间', 
+	remark VARCHAR(500) COMMENT '备注', 
+	PRIMARY KEY (user_id)
+)COMMENT='用户信息表'
+
+
+2026-02-17 01:48:01.565 | INFO     | logging:callHandlers:1736 - [no key 0.00047s] ()
+2026-02-17 01:48:01.580 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_user_role (
+	user_id BIGINT NOT NULL COMMENT '用户ID', 
+	role_id BIGINT NOT NULL COMMENT '角色ID', 
+	PRIMARY KEY (user_id, role_id)
+)COMMENT='用户和角色关联表'
+
+
+2026-02-17 01:48:01.580 | INFO     | logging:callHandlers:1736 - [no key 0.00022s] ()
+2026-02-17 01:48:01.593 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_user_post (
+	user_id BIGINT NOT NULL COMMENT '用户ID', 
+	post_id BIGINT NOT NULL COMMENT '岗位ID', 
+	PRIMARY KEY (user_id, post_id)
+)COMMENT='用户与岗位关联表'
+
+
+2026-02-17 01:48:01.593 | INFO     | logging:callHandlers:1736 - [no key 0.00022s] ()
+2026-02-17 01:48:01.607 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_menu (
+	menu_id BIGINT NOT NULL COMMENT '菜单ID' AUTO_INCREMENT, 
+	menu_name VARCHAR(50) NOT NULL COMMENT '菜单名称', 
+	parent_id BIGINT COMMENT '父菜单ID' DEFAULT '0', 
+	order_num INTEGER COMMENT '显示顺序' DEFAULT '0', 
+	path VARCHAR(200) COMMENT '路由地址' DEFAULT '''''', 
+	component VARCHAR(255) COMMENT '组件路径', 
+	query VARCHAR(255) COMMENT '路由参数', 
+	route_name VARCHAR(50) COMMENT '路由名称' DEFAULT '''''', 
+	is_frame INTEGER COMMENT '是否为外链（0是 1否）' DEFAULT '1', 
+	is_cache INTEGER COMMENT '是否缓存（0缓存 1不缓存）' DEFAULT '0', 
+	menu_type CHAR(1) COMMENT '菜单类型（M目录 C菜单 F按钮）' DEFAULT '''''', 
+	visible CHAR(1) COMMENT '菜单状态（0显示 1隐藏）' DEFAULT '0', 
+	status CHAR(1) COMMENT '菜单状态（0正常 1停用）' DEFAULT '0', 
+	perms VARCHAR(100) COMMENT '权限标识', 
+	icon VARCHAR(100) COMMENT '菜单图标' DEFAULT '#', 
+	create_by VARCHAR(64) COMMENT '创建者' DEFAULT '''''', 
+	create_time DATETIME COMMENT '创建时间', 
+	update_by VARCHAR(64) COMMENT '更新者' DEFAULT '''''', 
+	update_time DATETIME COMMENT '更新时间', 
+	remark VARCHAR(500) COMMENT '备注' DEFAULT '''''', 
+	PRIMARY KEY (menu_id)
+)COMMENT='菜单权限表'
+
+
+2026-02-17 01:48:01.607 | INFO     | logging:callHandlers:1736 - [no key 0.00038s] ()
+2026-02-17 01:48:01.608 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:03:20.344 | INFO     | server:lifespan:89 - ⏰️ RuoYi-FastAPI开始启动
+2026-02-17 02:03:20.344 | INFO     | utils.common_util:worship:22 - 
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG                  //
+////////////////////////////////////////////////////////////////////
+    
+2026-02-17 02:03:20.344 | INFO     | config.get_db:init_create_table:25 - 🔎 初始化数据库连接...
+2026-02-17 02:03:20.358 | INFO     | logging:callHandlers:1736 - SELECT DATABASE()
+2026-02-17 02:03:20.358 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.360 | INFO     | logging:callHandlers:1736 - SELECT @@sql_mode
+2026-02-17 02:03:20.361 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.362 | INFO     | logging:callHandlers:1736 - SELECT @@lower_case_table_names
+2026-02-17 02:03:20.362 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.364 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:03:20.364 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_config`
+2026-02-17 02:03:20.364 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.378 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_type`
+2026-02-17 02:03:20.379 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.388 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_data`
+2026-02-17 02:03:20.388 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.390 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job`
+2026-02-17 02:03:20.391 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.392 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job_log`
+2026-02-17 02:03:20.392 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.394 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_logininfor`
+2026-02-17 02:03:20.394 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.396 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_oper_log`
+2026-02-17 02:03:20.396 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.397 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dept`
+2026-02-17 02:03:20.397 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.399 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user`
+2026-02-17 02:03:20.399 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.401 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_role`
+2026-02-17 02:03:20.401 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.403 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_post`
+2026-02-17 02:03:20.403 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.404 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_menu`
+2026-02-17 02:03:20.404 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.406 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_post`
+2026-02-17 02:03:20.406 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.406 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role`
+2026-02-17 02:03:20.407 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.407 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_dept`
+2026-02-17 02:03:20.407 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.408 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_menu`
+2026-02-17 02:03:20.408 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.409 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_notice`
+2026-02-17 02:03:20.409 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.410 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_chat_config`
+2026-02-17 02:03:20.410 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.411 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_models`
+2026-02-17 02:03:20.411 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.412 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table`
+2026-02-17 02:03:20.412 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.413 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table_column`
+2026-02-17 02:03:20.413 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:03:20.414 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_menu (
+	menu_id BIGINT NOT NULL COMMENT '菜单ID' AUTO_INCREMENT, 
+	menu_name VARCHAR(50) NOT NULL COMMENT '菜单名称', 
+	parent_id BIGINT COMMENT '父菜单ID' DEFAULT '0', 
+	order_num INTEGER COMMENT '显示顺序' DEFAULT '0', 
+	path VARCHAR(200) COMMENT '路由地址' DEFAULT '''''', 
+	component VARCHAR(255) COMMENT '组件路径', 
+	query VARCHAR(255) COMMENT '路由参数', 
+	route_name VARCHAR(50) COMMENT '路由名称' DEFAULT '''''', 
+	is_frame INTEGER COMMENT '是否为外链（0是 1否）' DEFAULT '1', 
+	is_cache INTEGER COMMENT '是否缓存（0缓存 1不缓存）' DEFAULT '0', 
+	menu_type CHAR(1) COMMENT '菜单类型（M目录 C菜单 F按钮）' DEFAULT '', 
+	visible CHAR(1) COMMENT '菜单状态（0显示 1隐藏）' DEFAULT '0', 
+	status CHAR(1) COMMENT '菜单状态（0正常 1停用）' DEFAULT '0', 
+	perms VARCHAR(100) COMMENT '权限标识', 
+	icon VARCHAR(100) COMMENT '菜单图标' DEFAULT '#', 
+	create_by VARCHAR(64) COMMENT '创建者' DEFAULT '''''', 
+	create_time DATETIME COMMENT '创建时间', 
+	update_by VARCHAR(64) COMMENT '更新者' DEFAULT '''''', 
+	update_time DATETIME COMMENT '更新时间', 
+	remark VARCHAR(500) COMMENT '备注' DEFAULT '''''', 
+	PRIMARY KEY (menu_id)
+)COMMENT='菜单权限表'
+
+
+2026-02-17 02:03:20.414 | INFO     | logging:callHandlers:1736 - [no key 0.00029s] ()
+2026-02-17 02:03:20.437 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_post (
+	post_id BIGINT NOT NULL COMMENT '岗位ID' AUTO_INCREMENT, 
+	post_code VARCHAR(64) NOT NULL COMMENT '岗位编码', 
+	post_name VARCHAR(50) NOT NULL COMMENT '岗位名称', 
+	post_sort INTEGER NOT NULL COMMENT '显示顺序', 
+	status CHAR(1) NOT NULL COMMENT '状态（0正常 1停用）', 
+	create_by VARCHAR(64) COMMENT '创建者' DEFAULT '''''', 
+	create_time DATETIME COMMENT '创建时间', 
+	update_by VARCHAR(64) COMMENT '更新者' DEFAULT '''''', 
+	update_time DATETIME COMMENT '更新时间', 
+	remark VARCHAR(500) COMMENT '备注', 
+	PRIMARY KEY (post_id)
+)COMMENT='岗位信息表'
+
+
+2026-02-17 02:03:20.437 | INFO     | logging:callHandlers:1736 - [no key 0.00024s] ()
+2026-02-17 02:03:20.463 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_role (
+	role_id BIGINT NOT NULL COMMENT '角色ID' AUTO_INCREMENT, 
+	role_name VARCHAR(30) NOT NULL COMMENT '角色名称', 
+	role_key VARCHAR(100) NOT NULL COMMENT '角色权限字符串', 
+	role_sort INTEGER NOT NULL COMMENT '显示顺序', 
+	data_scope CHAR(1) COMMENT '数据范围（1：全部数据权限 2：自定数据权限 3：本部门数据权限 4：本部门及以下数据权限）' DEFAULT '1', 
+	menu_check_strictly TINYINT(1) COMMENT '菜单树选择项是否关联显示' DEFAULT '1', 
+	dept_check_strictly TINYINT(1) COMMENT '部门树选择项是否关联显示' DEFAULT '1', 
+	status CHAR(1) NOT NULL COMMENT '角色状态（0正常 1停用）', 
+	del_flag CHAR(1) COMMENT '删除标志（0代表存在 2代表删除）' DEFAULT '0', 
+	create_by VARCHAR(64) COMMENT '创建者' DEFAULT '''''', 
+	create_time DATETIME COMMENT '创建时间', 
+	update_by VARCHAR(64) COMMENT '更新者' DEFAULT '''''', 
+	update_time DATETIME COMMENT '更新时间', 
+	remark VARCHAR(500) COMMENT '备注', 
+	PRIMARY KEY (role_id)
+)COMMENT='角色信息表'
+
+
+2026-02-17 02:03:20.463 | INFO     | logging:callHandlers:1736 - [no key 0.00072s] ()
+2026-02-17 02:03:20.487 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_role_dept (
+	role_id BIGINT NOT NULL COMMENT '角色ID', 
+	dept_id BIGINT NOT NULL COMMENT '部门ID', 
+	PRIMARY KEY (role_id, dept_id)
+)COMMENT='角色和部门关联表'
+
+
+2026-02-17 02:03:20.487 | INFO     | logging:callHandlers:1736 - [no key 0.00024s] ()
+2026-02-17 02:03:20.499 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_role_menu (
+	role_id BIGINT NOT NULL COMMENT '角色ID', 
+	menu_id BIGINT NOT NULL COMMENT '菜单ID', 
+	PRIMARY KEY (role_id, menu_id)
+)COMMENT='角色和菜单关联表'
+
+
+2026-02-17 02:03:20.499 | INFO     | logging:callHandlers:1736 - [no key 0.00019s] ()
+2026-02-17 02:03:20.514 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE sys_notice (
+	notice_id INTEGER NOT NULL COMMENT '公告ID' AUTO_INCREMENT, 
+	notice_title VARCHAR(50) NOT NULL COMMENT '公告标题', 
+	notice_type CHAR(1) NOT NULL COMMENT '公告类型（1通知 2公告）', 
+	notice_content LONGBLOB COMMENT '公告内容', 
+	status CHAR(1) COMMENT '公告状态（0正常 1关闭）' DEFAULT '0', 
+	create_by VARCHAR(64) COMMENT '创建者' DEFAULT '''''', 
+	create_time DATETIME COMMENT '创建时间', 
+	update_by VARCHAR(64) COMMENT '更新者' DEFAULT '''''', 
+	update_time DATETIME COMMENT '更新时间', 
+	remark VARCHAR(255) COMMENT '备注', 
+	PRIMARY KEY (notice_id)
+)COMMENT='通知公告表'
+
+
+2026-02-17 02:03:20.514 | INFO     | logging:callHandlers:1736 - [no key 0.00027s] ()
+2026-02-17 02:03:20.527 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE ai_chat_config (
+	chat_config_id BIGINT NOT NULL COMMENT '配置主键' AUTO_INCREMENT, 
+	user_id BIGINT NOT NULL COMMENT '用户ID', 
+	temperature FLOAT COMMENT '默认温度', 
+	add_history_to_context CHAR(1) COMMENT '是否添加历史记录(0是, 1否)' DEFAULT '0', 
+	num_history_runs INTEGER COMMENT '历史记录条数', 
+	system_prompt TEXT COMMENT '系统提示词', 
+	metrics_default_visible CHAR(1) COMMENT '默认显示指标(0是, 1否)' DEFAULT '0', 
+	vision_enabled CHAR(1) COMMENT '是否开启视觉(0是, 1否)' DEFAULT '1', 
+	image_max_size_mb INTEGER COMMENT '图片最大大小(MB)', 
+	create_time DATETIME COMMENT '创建时间', 
+	update_time DATETIME COMMENT '更新时间', 
+	PRIMARY KEY (chat_config_id), 
+	UNIQUE (user_id)
+)COMMENT='AI对话配置表'
+
+
+2026-02-17 02:03:20.527 | INFO     | logging:callHandlers:1736 - [no key 0.00040s] ()
+2026-02-17 02:03:20.544 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE ai_models (
+	model_id BIGINT NOT NULL COMMENT '模型主键' AUTO_INCREMENT, 
+	model_code VARCHAR(100) NOT NULL COMMENT '模型编码', 
+	model_name VARCHAR(100) COMMENT '模型名称', 
+	provider VARCHAR(50) NOT NULL COMMENT '提供商', 
+	model_sort INTEGER NOT NULL COMMENT '显示顺序', 
+	api_key VARCHAR(255) COMMENT 'API Key', 
+	base_url VARCHAR(255) COMMENT 'Base URL', 
+	model_type VARCHAR(50) COMMENT '模型类型', 
+	max_tokens INTEGER COMMENT '最大输出token', 
+	temperature FLOAT COMMENT '默认温度', 
+	support_reasoning CHAR(1) COMMENT '是否支持推理' DEFAULT 'N', 
+	support_images CHAR(1) COMMENT '是否支持图片' DEFAULT 'N', 
+	status CHAR(1) COMMENT '模型状态' DEFAULT '0', 
+	user_id BIGINT COMMENT '用户ID', 
+	dept_id BIGINT COMMENT '部门ID', 
+	create_by VARCHAR(64) COMMENT '创建者' DEFAULT '''''', 
+	create_time DATETIME COMMENT '创建时间', 
+	update_by VARCHAR(64) COMMENT '更新者' DEFAULT '''''', 
+	update_time DATETIME COMMENT '更新时间', 
+	remark VARCHAR(500) COMMENT '备注', 
+	PRIMARY KEY (model_id)
+)COMMENT='AI模型表'
+
+
+2026-02-17 02:03:20.545 | INFO     | logging:callHandlers:1736 - [no key 0.00044s] ()
+2026-02-17 02:03:20.563 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE gen_table (
+	table_id BIGINT NOT NULL COMMENT '编号' AUTO_INCREMENT, 
+	table_name VARCHAR(200) COMMENT '表名称' DEFAULT '''''', 
+	table_comment VARCHAR(500) COMMENT '表描述' DEFAULT '''''', 
+	sub_table_name VARCHAR(64) COMMENT '关联子表的表名', 
+	sub_table_fk_name VARCHAR(64) COMMENT '子表关联的外键名', 
+	class_name VARCHAR(100) COMMENT '实体类名称' DEFAULT '''''', 
+	tpl_category VARCHAR(200) COMMENT '使用的模板（crud单表操作 tree树表操作）' DEFAULT 'crud', 
+	tpl_web_type VARCHAR(30) COMMENT '前端模板类型（element-ui模版 element-plus模版）' DEFAULT '''''', 
+	package_name VARCHAR(100) COMMENT '生成包路径', 
+	module_name VARCHAR(30) COMMENT '生成模块名', 
+	business_name VARCHAR(30) COMMENT '生成业务名', 
+	function_name VARCHAR(50) COMMENT '生成功能名', 
+	function_author VARCHAR(50) COMMENT '生成功能作者', 
+	gen_type CHAR(1) COMMENT '生成代码方式（0zip压缩包 1自定义路径）' DEFAULT '0', 
+	gen_path VARCHAR(200) COMMENT '生成路径（不填默认项目路径）' DEFAULT '/', 
+	options VARCHAR(1000) COMMENT '其它生成选项', 
+	create_by VARCHAR(64) COMMENT '创建者' DEFAULT '''''', 
+	create_time DATETIME COMMENT '创建时间', 
+	update_by VARCHAR(64) COMMENT '更新者' DEFAULT '''''', 
+	update_time DATETIME COMMENT '更新时间', 
+	remark VARCHAR(500) COMMENT '备注', 
+	PRIMARY KEY (table_id)
+)COMMENT='代码生成业务表'
+
+
+2026-02-17 02:03:20.564 | INFO     | logging:callHandlers:1736 - [no key 0.00031s] ()
+2026-02-17 02:03:20.579 | INFO     | logging:callHandlers:1736 - 
+CREATE TABLE gen_table_column (
+	column_id BIGINT NOT NULL COMMENT '编号' AUTO_INCREMENT, 
+	table_id BIGINT COMMENT '归属表编号', 
+	column_name VARCHAR(200) COMMENT '列名称', 
+	column_comment VARCHAR(500) COMMENT '列描述', 
+	column_type VARCHAR(100) COMMENT '列类型', 
+	python_type VARCHAR(500) COMMENT 'PYTHON类型', 
+	python_field VARCHAR(200) COMMENT 'PYTHON字段名', 
+	is_pk CHAR(1) COMMENT '是否主键（1是）', 
+	is_increment CHAR(1) COMMENT '是否自增（1是）', 
+	is_required CHAR(1) COMMENT '是否必填（1是）', 
+	is_unique CHAR(1) COMMENT '是否唯一（1是）', 
+	is_insert CHAR(1) COMMENT '是否为插入字段（1是）', 
+	is_edit CHAR(1) COMMENT '是否编辑字段（1是）', 
+	is_list CHAR(1) COMMENT '是否列表字段（1是）', 
+	is_query CHAR(1) COMMENT '是否查询字段（1是）', 
+	query_type VARCHAR(200) COMMENT '查询方式（等于、不等于、大于、小于、范围）' DEFAULT 'EQ', 
+	html_type VARCHAR(200) COMMENT '显示类型（文本框、文本域、下拉框、复选框、单选框、日期控件）', 
+	dict_type VARCHAR(200) COMMENT '字典类型' DEFAULT '''''', 
+	sort INTEGER COMMENT '排序', 
+	create_by VARCHAR(64) COMMENT '创建者' DEFAULT '''''', 
+	create_time DATETIME COMMENT '创建时间', 
+	update_by VARCHAR(64) COMMENT '更新者' DEFAULT '''''', 
+	update_time DATETIME COMMENT '更新时间', 
+	PRIMARY KEY (column_id)
+)COMMENT='代码生成业务表字段'
+
+
+2026-02-17 02:03:20.579 | INFO     | logging:callHandlers:1736 - [no key 0.00026s] ()
+2026-02-17 02:03:20.593 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-02-17 02:03:20.595 | INFO     | config.get_db:init_create_table:28 - ✅️ 数据库连接成功
+2026-02-17 02:03:20.595 | INFO     | config.get_redis:check_redis_connection:57 - 🔎 开始连接redis...
+2026-02-17 02:03:20.596 | INFO     | config.get_redis:check_redis_connection:63 - ✅️ redis连接成功
+2026-02-17 02:03:20.596 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:03:20.606 | INFO     | logging:callHandlers:1736 - SELECT sys_dict_type.dict_id, sys_dict_type.dict_name, sys_dict_type.dict_type, sys_dict_type.status, sys_dict_type.create_by, sys_dict_type.create_time, sys_dict_type.update_by, sys_dict_type.update_time, sys_dict_type.remark 
+FROM sys_dict_type
+2026-02-17 02:03:20.606 | INFO     | logging:callHandlers:1736 - [generated in 0.00027s] ()
+2026-02-17 02:03:20.608 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:03:20.612 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:03:20.613 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_config.config_id, sys_config.config_name, sys_config.config_key, sys_config.config_value, sys_config.config_type, sys_config.create_by, sys_config.create_time, sys_config.update_by, sys_config.update_time, sys_config.remark 
+FROM sys_config 
+WHERE true = 1 ORDER BY sys_config.config_id
+2026-02-17 02:03:20.613 | INFO     | logging:callHandlers:1736 - [generated in 0.00015s] ()
+2026-02-17 02:03:20.614 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:03:20.615 | INFO     | config.get_scheduler:init_system_scheduler:210 - 🔎 Worker 79527-7f0ecd 尝试获取 Application 锁...
+2026-02-17 02:03:20.616 | INFO     | config.get_scheduler:_start_scheduler_as_leader:235 - 🎯 Worker 79527-7f0ecd 持有 Application 锁，开始启动定时任务...
+2026-02-17 02:03:20.674 | INFO     | logging:callHandlers:1736 - Scheduler started
+2026-02-17 02:03:20.690 | INFO     | config.get_scheduler:_start_scheduler_as_leader:261 - ✅️ 系统初始定时任务加载成功
+2026-02-17 02:03:21.191 | INFO     | server:lifespan:101 - 🚀 RuoYi-FastAPI启动成功
+2026-02-17 02:03:21.193 | INFO     | server:lifespan:113 - 💻 应用地址:
+🏠 Local:    http://127.0.0.1:9099
+📡 Network:  http://192.168.100.200:9099
+2026-02-17 02:03:21.193 | INFO     | server:lifespan:120 - 📄 Swagger文档:
+🏠 Local:    http://127.0.0.1:9099/docs
+📡 Network:  http://192.168.100.200:9099/docs
+2026-02-17 02:03:21.194 | INFO     | server:lifespan:127 - 📚 ReDoc文档:
+🏠 Local:    http://127.0.0.1:9099/redoc
+📡 Network:  http://192.168.100.200:9099/redoc
+2026-02-17 02:05:41.408 | INFO     | config.get_redis:close_redis_pool:85 - ✅️ 关闭redis连接成功
+2026-02-17 02:05:41.408 | INFO     | config.get_scheduler:close_system_scheduler:768 - ✅️ 关闭定时任务成功
+2026-02-17 02:05:41.409 | INFO     | logging:callHandlers:1736 - Scheduler has been shut down
+2026-02-17 02:05:41.415 | INFO     | config.get_scheduler:close_system_scheduler:774 - 🔓 Worker 79527-7f0ecd 释放 Application 锁
+2026-02-17 02:05:42.978 | INFO     | server:lifespan:89 - ⏰️ RuoYi-FastAPI开始启动
+2026-02-17 02:05:42.978 | INFO     | utils.common_util:worship:22 - 
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG                  //
+////////////////////////////////////////////////////////////////////
+    
+2026-02-17 02:05:42.978 | INFO     | config.get_db:init_create_table:25 - 🔎 初始化数据库连接...
+2026-02-17 02:05:42.985 | INFO     | logging:callHandlers:1736 - SELECT DATABASE()
+2026-02-17 02:05:42.985 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:42.996 | INFO     | logging:callHandlers:1736 - SELECT @@sql_mode
+2026-02-17 02:05:42.996 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.010 | INFO     | logging:callHandlers:1736 - SELECT @@lower_case_table_names
+2026-02-17 02:05:43.012 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.019 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:05:43.020 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_config`
+2026-02-17 02:05:43.020 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.023 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_type`
+2026-02-17 02:05:43.024 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.026 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_data`
+2026-02-17 02:05:43.026 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.028 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job`
+2026-02-17 02:05:43.028 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.030 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job_log`
+2026-02-17 02:05:43.030 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.036 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_logininfor`
+2026-02-17 02:05:43.036 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.040 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_oper_log`
+2026-02-17 02:05:43.040 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.043 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dept`
+2026-02-17 02:05:43.043 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.045 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user`
+2026-02-17 02:05:43.045 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.046 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_role`
+2026-02-17 02:05:43.046 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.047 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_post`
+2026-02-17 02:05:43.047 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.048 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_menu`
+2026-02-17 02:05:43.048 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.049 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_post`
+2026-02-17 02:05:43.049 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.051 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role`
+2026-02-17 02:05:43.051 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.053 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_dept`
+2026-02-17 02:05:43.053 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.054 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_menu`
+2026-02-17 02:05:43.054 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.055 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_notice`
+2026-02-17 02:05:43.055 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.056 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_chat_config`
+2026-02-17 02:05:43.056 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.058 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_models`
+2026-02-17 02:05:43.058 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.059 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table`
+2026-02-17 02:05:43.059 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.060 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table_column`
+2026-02-17 02:05:43.061 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:05:43.062 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-02-17 02:05:43.063 | INFO     | config.get_db:init_create_table:28 - ✅️ 数据库连接成功
+2026-02-17 02:05:43.063 | INFO     | config.get_redis:check_redis_connection:57 - 🔎 开始连接redis...
+2026-02-17 02:05:43.064 | INFO     | config.get_redis:check_redis_connection:63 - ✅️ redis连接成功
+2026-02-17 02:05:43.064 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:05:43.073 | INFO     | logging:callHandlers:1736 - SELECT sys_dict_type.dict_id, sys_dict_type.dict_name, sys_dict_type.dict_type, sys_dict_type.status, sys_dict_type.create_by, sys_dict_type.create_time, sys_dict_type.update_by, sys_dict_type.update_time, sys_dict_type.remark 
+FROM sys_dict_type
+2026-02-17 02:05:43.073 | INFO     | logging:callHandlers:1736 - [generated in 0.00026s] ()
+2026-02-17 02:05:43.075 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:05:43.077 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:05:43.078 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_config.config_id, sys_config.config_name, sys_config.config_key, sys_config.config_value, sys_config.config_type, sys_config.create_by, sys_config.create_time, sys_config.update_by, sys_config.update_time, sys_config.remark 
+FROM sys_config 
+WHERE true = 1 ORDER BY sys_config.config_id
+2026-02-17 02:05:43.078 | INFO     | logging:callHandlers:1736 - [generated in 0.00017s] ()
+2026-02-17 02:05:43.079 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:05:43.080 | INFO     | config.get_scheduler:init_system_scheduler:210 - 🔎 Worker 79713-5a8077 尝试获取 Application 锁...
+2026-02-17 02:05:43.081 | INFO     | config.get_scheduler:_start_scheduler_as_leader:235 - 🎯 Worker 79713-5a8077 持有 Application 锁，开始启动定时任务...
+2026-02-17 02:05:43.101 | INFO     | logging:callHandlers:1736 - Scheduler started
+2026-02-17 02:05:43.117 | INFO     | config.get_scheduler:_start_scheduler_as_leader:261 - ✅️ 系统初始定时任务加载成功
+2026-02-17 02:05:43.618 | INFO     | server:lifespan:101 - 🚀 RuoYi-FastAPI启动成功
+2026-02-17 02:05:43.621 | INFO     | server:lifespan:113 - 💻 应用地址:
+🏠 Local:    http://127.0.0.1:9099
+📡 Network:  http://192.168.100.200:9099
+2026-02-17 02:05:43.622 | INFO     | server:lifespan:120 - 📄 Swagger文档:
+🏠 Local:    http://127.0.0.1:9099/docs
+📡 Network:  http://192.168.100.200:9099/docs
+2026-02-17 02:05:43.622 | INFO     | server:lifespan:127 - 📚 ReDoc文档:
+🏠 Local:    http://127.0.0.1:9099/redoc
+📡 Network:  http://192.168.100.200:9099/redoc
+2026-02-17 02:09:14.961 | INFO     | module_admin.controller.captcha_controller:get_captcha_image:37 - 编号为9217326e-54b4-4ccb-9be7-94506ef3ffd8的会话获取图片验证码成功
+2026-02-17 02:09:25.473 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:09:25.475 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark, sys_dept.dept_id AS dept_id_1, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email AS email_1, sys_dept.status AS status_1, sys_dept.del_flag AS del_flag_1, sys_dept.create_by AS create_by_1, sys_dept.create_time AS create_time_1, sys_dept.update_by AS update_by_1, sys_dept.update_time AS update_time_1 
+FROM sys_user LEFT OUTER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.user_name = %s AND sys_user.del_flag = %s
+2026-02-17 02:09:25.475 | INFO     | logging:callHandlers:1736 - [generated in 0.00039s] ('0', '0', 'admin', '0')
+2026-02-17 02:09:25.502 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:09:25.510 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:09:25.511 | INFO     | logging:callHandlers:1736 - INSERT INTO sys_logininfor (user_name, login_location, browser, os, status, msg, login_time) VALUES (%s, %s, %s, %s, %s, %s, %s)
+2026-02-17 02:09:25.511 | INFO     | logging:callHandlers:1736 - [generated in 0.00018s] ('admin', '未知', 'Chrome 144', 'Mac OS X 10', '1', '用户不存在', datetime.datetime(2026, 2, 17, 2, 9, 25, 465551))
+2026-02-17 02:09:25.515 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-02-17 02:10:11.729 | INFO     | config.get_redis:close_redis_pool:85 - ✅️ 关闭redis连接成功
+2026-02-17 02:10:11.731 | INFO     | config.get_scheduler:close_system_scheduler:768 - ✅️ 关闭定时任务成功
+2026-02-17 02:10:11.733 | INFO     | logging:callHandlers:1736 - Scheduler has been shut down
+2026-02-17 02:10:11.740 | INFO     | config.get_scheduler:close_system_scheduler:774 - 🔓 Worker 79713-5a8077 释放 Application 锁
+2026-02-17 02:12:11.988 | INFO     | server:lifespan:89 - ⏰️ RuoYi-FastAPI开始启动
+2026-02-17 02:12:11.988 | INFO     | utils.common_util:worship:22 - 
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG                  //
+////////////////////////////////////////////////////////////////////
+    
+2026-02-17 02:12:11.988 | INFO     | config.get_db:init_create_table:25 - 🔎 初始化数据库连接...
+2026-02-17 02:12:12.005 | INFO     | logging:callHandlers:1736 - SELECT DATABASE()
+2026-02-17 02:12:12.005 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.008 | INFO     | logging:callHandlers:1736 - SELECT @@sql_mode
+2026-02-17 02:12:12.009 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.010 | INFO     | logging:callHandlers:1736 - SELECT @@lower_case_table_names
+2026-02-17 02:12:12.010 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.013 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:12:12.013 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_config`
+2026-02-17 02:12:12.013 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.019 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_type`
+2026-02-17 02:12:12.019 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.021 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_data`
+2026-02-17 02:12:12.021 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.023 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job`
+2026-02-17 02:12:12.023 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.024 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job_log`
+2026-02-17 02:12:12.025 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.026 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_logininfor`
+2026-02-17 02:12:12.026 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.027 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_oper_log`
+2026-02-17 02:12:12.027 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.028 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dept`
+2026-02-17 02:12:12.028 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.029 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user`
+2026-02-17 02:12:12.030 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.031 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_role`
+2026-02-17 02:12:12.031 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.032 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_post`
+2026-02-17 02:12:12.032 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.033 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_menu`
+2026-02-17 02:12:12.033 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.034 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_post`
+2026-02-17 02:12:12.034 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.035 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role`
+2026-02-17 02:12:12.035 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.036 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_dept`
+2026-02-17 02:12:12.036 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.038 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_menu`
+2026-02-17 02:12:12.038 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.040 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_notice`
+2026-02-17 02:12:12.040 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.041 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_chat_config`
+2026-02-17 02:12:12.041 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.043 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_models`
+2026-02-17 02:12:12.043 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.045 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table`
+2026-02-17 02:12:12.045 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.046 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table_column`
+2026-02-17 02:12:12.047 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:12:12.048 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-02-17 02:12:12.049 | INFO     | config.get_db:init_create_table:28 - ✅️ 数据库连接成功
+2026-02-17 02:12:12.049 | INFO     | config.get_redis:check_redis_connection:57 - 🔎 开始连接redis...
+2026-02-17 02:12:12.050 | INFO     | config.get_redis:check_redis_connection:63 - ✅️ redis连接成功
+2026-02-17 02:12:12.051 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:12:12.059 | INFO     | logging:callHandlers:1736 - SELECT sys_dict_type.dict_id, sys_dict_type.dict_name, sys_dict_type.dict_type, sys_dict_type.status, sys_dict_type.create_by, sys_dict_type.create_time, sys_dict_type.update_by, sys_dict_type.update_time, sys_dict_type.remark 
+FROM sys_dict_type
+2026-02-17 02:12:12.059 | INFO     | logging:callHandlers:1736 - [generated in 0.00024s] ()
+2026-02-17 02:12:12.061 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:12:12.063 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:12:12.064 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_config.config_id, sys_config.config_name, sys_config.config_key, sys_config.config_value, sys_config.config_type, sys_config.create_by, sys_config.create_time, sys_config.update_by, sys_config.update_time, sys_config.remark 
+FROM sys_config 
+WHERE true = 1 ORDER BY sys_config.config_id
+2026-02-17 02:12:12.064 | INFO     | logging:callHandlers:1736 - [generated in 0.00015s] ()
+2026-02-17 02:12:12.065 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:12:12.066 | INFO     | config.get_scheduler:init_system_scheduler:210 - 🔎 Worker 86519-1224c2 尝试获取 Application 锁...
+2026-02-17 02:12:12.067 | INFO     | config.get_scheduler:_start_scheduler_as_leader:235 - 🎯 Worker 86519-1224c2 持有 Application 锁，开始启动定时任务...
+2026-02-17 02:12:12.083 | INFO     | logging:callHandlers:1736 - Scheduler started
+2026-02-17 02:12:12.099 | INFO     | config.get_scheduler:_start_scheduler_as_leader:261 - ✅️ 系统初始定时任务加载成功
+2026-02-17 02:12:12.599 | INFO     | server:lifespan:101 - 🚀 RuoYi-FastAPI启动成功
+2026-02-17 02:12:12.601 | INFO     | server:lifespan:113 - 💻 应用地址:
+🏠 Local:    http://127.0.0.1:9099
+📡 Network:  http://192.168.100.200:9099
+2026-02-17 02:12:12.601 | INFO     | server:lifespan:120 - 📄 Swagger文档:
+🏠 Local:    http://127.0.0.1:9099/docs
+📡 Network:  http://192.168.100.200:9099/docs
+2026-02-17 02:12:12.601 | INFO     | server:lifespan:127 - 📚 ReDoc文档:
+🏠 Local:    http://127.0.0.1:9099/redoc
+📡 Network:  http://192.168.100.200:9099/redoc
+2026-02-17 02:14:36.100 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:14:36.102 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark, sys_dept.dept_id AS dept_id_1, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email AS email_1, sys_dept.status AS status_1, sys_dept.del_flag AS del_flag_1, sys_dept.create_by AS create_by_1, sys_dept.create_time AS create_time_1, sys_dept.update_by AS update_by_1, sys_dept.update_time AS update_time_1 
+FROM sys_user LEFT OUTER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.user_name = %s AND sys_user.del_flag = %s
+2026-02-17 02:14:36.102 | INFO     | logging:callHandlers:1736 - [generated in 0.00032s] ('0', '0', 'admin', '0')
+2026-02-17 02:14:36.109 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:18:42.106 | INFO     | config.get_redis:close_redis_pool:85 - ✅️ 关闭redis连接成功
+2026-02-17 02:18:42.108 | INFO     | config.get_scheduler:close_system_scheduler:768 - ✅️ 关闭定时任务成功
+2026-02-17 02:18:42.108 | INFO     | logging:callHandlers:1736 - Scheduler has been shut down
+2026-02-17 02:18:42.115 | INFO     | config.get_scheduler:close_system_scheduler:774 - 🔓 Worker 86519-1224c2 释放 Application 锁
+2026-02-17 02:18:43.771 | INFO     | server:lifespan:89 - ⏰️ RuoYi-FastAPI开始启动
+2026-02-17 02:18:43.771 | INFO     | utils.common_util:worship:22 - 
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG                  //
+////////////////////////////////////////////////////////////////////
+    
+2026-02-17 02:18:43.772 | INFO     | config.get_db:init_create_table:25 - 🔎 初始化数据库连接...
+2026-02-17 02:18:43.783 | INFO     | logging:callHandlers:1736 - SELECT DATABASE()
+2026-02-17 02:18:43.784 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.786 | INFO     | logging:callHandlers:1736 - SELECT @@sql_mode
+2026-02-17 02:18:43.786 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.788 | INFO     | logging:callHandlers:1736 - SELECT @@lower_case_table_names
+2026-02-17 02:18:43.788 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.791 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:18:43.791 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_config`
+2026-02-17 02:18:43.791 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.795 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_type`
+2026-02-17 02:18:43.795 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.798 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_data`
+2026-02-17 02:18:43.798 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.801 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job`
+2026-02-17 02:18:43.801 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.804 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job_log`
+2026-02-17 02:18:43.804 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.806 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_logininfor`
+2026-02-17 02:18:43.806 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.808 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_oper_log`
+2026-02-17 02:18:43.808 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.809 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dept`
+2026-02-17 02:18:43.809 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.811 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user`
+2026-02-17 02:18:43.811 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.814 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_role`
+2026-02-17 02:18:43.814 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.815 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_post`
+2026-02-17 02:18:43.815 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.816 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_menu`
+2026-02-17 02:18:43.816 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.817 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_post`
+2026-02-17 02:18:43.817 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.818 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role`
+2026-02-17 02:18:43.819 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.820 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_dept`
+2026-02-17 02:18:43.820 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.821 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_menu`
+2026-02-17 02:18:43.822 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.823 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_notice`
+2026-02-17 02:18:43.823 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.825 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_chat_config`
+2026-02-17 02:18:43.825 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.827 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_models`
+2026-02-17 02:18:43.827 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.829 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table`
+2026-02-17 02:18:43.829 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.833 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table_column`
+2026-02-17 02:18:43.834 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:18:43.836 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-02-17 02:18:43.839 | INFO     | config.get_db:init_create_table:28 - ✅️ 数据库连接成功
+2026-02-17 02:18:43.839 | INFO     | config.get_redis:check_redis_connection:57 - 🔎 开始连接redis...
+2026-02-17 02:18:43.840 | INFO     | config.get_redis:check_redis_connection:63 - ✅️ redis连接成功
+2026-02-17 02:18:43.841 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:18:43.854 | INFO     | logging:callHandlers:1736 - SELECT sys_dict_type.dict_id, sys_dict_type.dict_name, sys_dict_type.dict_type, sys_dict_type.status, sys_dict_type.create_by, sys_dict_type.create_time, sys_dict_type.update_by, sys_dict_type.update_time, sys_dict_type.remark 
+FROM sys_dict_type
+2026-02-17 02:18:43.854 | INFO     | logging:callHandlers:1736 - [generated in 0.00043s] ()
+2026-02-17 02:18:43.856 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:18:43.858 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:18:43.860 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_config.config_id, sys_config.config_name, sys_config.config_key, sys_config.config_value, sys_config.config_type, sys_config.create_by, sys_config.create_time, sys_config.update_by, sys_config.update_time, sys_config.remark 
+FROM sys_config 
+WHERE true = 1 ORDER BY sys_config.config_id
+2026-02-17 02:18:43.860 | INFO     | logging:callHandlers:1736 - [generated in 0.00058s] ()
+2026-02-17 02:18:43.863 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:18:43.866 | INFO     | config.get_scheduler:init_system_scheduler:210 - 🔎 Worker 92779-297c06 尝试获取 Application 锁...
+2026-02-17 02:18:43.869 | INFO     | config.get_scheduler:_start_scheduler_as_leader:235 - 🎯 Worker 92779-297c06 持有 Application 锁，开始启动定时任务...
+2026-02-17 02:18:43.890 | INFO     | logging:callHandlers:1736 - Scheduler started
+2026-02-17 02:18:43.913 | INFO     | config.get_scheduler:_start_scheduler_as_leader:261 - ✅️ 系统初始定时任务加载成功
+2026-02-17 02:18:44.413 | INFO     | server:lifespan:101 - 🚀 RuoYi-FastAPI启动成功
+2026-02-17 02:18:44.415 | INFO     | server:lifespan:113 - 💻 应用地址:
+🏠 Local:    http://127.0.0.1:9099
+📡 Network:  http://192.168.100.200:9099
+2026-02-17 02:18:44.416 | INFO     | server:lifespan:120 - 📄 Swagger文档:
+🏠 Local:    http://127.0.0.1:9099/docs
+📡 Network:  http://192.168.100.200:9099/docs
+2026-02-17 02:18:44.416 | INFO     | server:lifespan:127 - 📚 ReDoc文档:
+🏠 Local:    http://127.0.0.1:9099/redoc
+📡 Network:  http://192.168.100.200:9099/redoc
+2026-02-17 02:24:08.558 | INFO     | config.get_redis:close_redis_pool:85 - ✅️ 关闭redis连接成功
+2026-02-17 02:24:08.560 | INFO     | config.get_scheduler:close_system_scheduler:768 - ✅️ 关闭定时任务成功
+2026-02-17 02:24:08.561 | INFO     | logging:callHandlers:1736 - Scheduler has been shut down
+2026-02-17 02:24:08.564 | INFO     | config.get_scheduler:close_system_scheduler:774 - 🔓 Worker 92779-297c06 释放 Application 锁
+2026-02-17 02:24:10.135 | INFO     | server:lifespan:89 - ⏰️ RuoYi-FastAPI开始启动
+2026-02-17 02:24:10.135 | INFO     | utils.common_util:worship:22 - 
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG                  //
+////////////////////////////////////////////////////////////////////
+    
+2026-02-17 02:24:10.135 | INFO     | config.get_db:init_create_table:25 - 🔎 初始化数据库连接...
+2026-02-17 02:24:10.148 | INFO     | logging:callHandlers:1736 - SELECT DATABASE()
+2026-02-17 02:24:10.149 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.151 | INFO     | logging:callHandlers:1736 - SELECT @@sql_mode
+2026-02-17 02:24:10.151 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.152 | INFO     | logging:callHandlers:1736 - SELECT @@lower_case_table_names
+2026-02-17 02:24:10.152 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.154 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:24:10.154 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_config`
+2026-02-17 02:24:10.154 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.158 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_type`
+2026-02-17 02:24:10.159 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.160 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_data`
+2026-02-17 02:24:10.160 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.161 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job`
+2026-02-17 02:24:10.161 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.163 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job_log`
+2026-02-17 02:24:10.163 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.164 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_logininfor`
+2026-02-17 02:24:10.164 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.166 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_oper_log`
+2026-02-17 02:24:10.166 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.167 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dept`
+2026-02-17 02:24:10.167 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.168 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user`
+2026-02-17 02:24:10.168 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.169 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_role`
+2026-02-17 02:24:10.169 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.170 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_post`
+2026-02-17 02:24:10.170 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.172 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_menu`
+2026-02-17 02:24:10.172 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.173 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_post`
+2026-02-17 02:24:10.173 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.174 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role`
+2026-02-17 02:24:10.174 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.175 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_dept`
+2026-02-17 02:24:10.175 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.176 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_menu`
+2026-02-17 02:24:10.176 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.177 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_notice`
+2026-02-17 02:24:10.177 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.178 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_chat_config`
+2026-02-17 02:24:10.179 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.180 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_models`
+2026-02-17 02:24:10.180 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.181 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table`
+2026-02-17 02:24:10.182 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.183 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table_column`
+2026-02-17 02:24:10.183 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:24:10.184 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-02-17 02:24:10.185 | INFO     | config.get_db:init_create_table:28 - ✅️ 数据库连接成功
+2026-02-17 02:24:10.185 | INFO     | config.get_redis:check_redis_connection:57 - 🔎 开始连接redis...
+2026-02-17 02:24:10.186 | INFO     | config.get_redis:check_redis_connection:63 - ✅️ redis连接成功
+2026-02-17 02:24:10.187 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:24:10.195 | INFO     | logging:callHandlers:1736 - SELECT sys_dict_type.dict_id, sys_dict_type.dict_name, sys_dict_type.dict_type, sys_dict_type.status, sys_dict_type.create_by, sys_dict_type.create_time, sys_dict_type.update_by, sys_dict_type.update_time, sys_dict_type.remark 
+FROM sys_dict_type
+2026-02-17 02:24:10.195 | INFO     | logging:callHandlers:1736 - [generated in 0.00022s] ()
+2026-02-17 02:24:10.196 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:24:10.199 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:24:10.200 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_config.config_id, sys_config.config_name, sys_config.config_key, sys_config.config_value, sys_config.config_type, sys_config.create_by, sys_config.create_time, sys_config.update_by, sys_config.update_time, sys_config.remark 
+FROM sys_config 
+WHERE true = 1 ORDER BY sys_config.config_id
+2026-02-17 02:24:10.200 | INFO     | logging:callHandlers:1736 - [generated in 0.00015s] ()
+2026-02-17 02:24:10.202 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:24:10.204 | INFO     | config.get_scheduler:init_system_scheduler:210 - 🔎 Worker 97971-005dcf 尝试获取 Application 锁...
+2026-02-17 02:24:10.206 | INFO     | config.get_scheduler:_start_scheduler_as_leader:235 - 🎯 Worker 97971-005dcf 持有 Application 锁，开始启动定时任务...
+2026-02-17 02:24:10.224 | INFO     | logging:callHandlers:1736 - Scheduler started
+2026-02-17 02:24:10.241 | INFO     | config.get_scheduler:_start_scheduler_as_leader:261 - ✅️ 系统初始定时任务加载成功
+2026-02-17 02:24:10.743 | INFO     | server:lifespan:101 - 🚀 RuoYi-FastAPI启动成功
+2026-02-17 02:24:10.744 | INFO     | server:lifespan:113 - 💻 应用地址:
+🏠 Local:    http://127.0.0.1:9099
+📡 Network:  http://192.168.100.200:9099
+2026-02-17 02:24:10.744 | INFO     | server:lifespan:120 - 📄 Swagger文档:
+🏠 Local:    http://127.0.0.1:9099/docs
+📡 Network:  http://192.168.100.200:9099/docs
+2026-02-17 02:24:10.744 | INFO     | server:lifespan:127 - 📚 ReDoc文档:
+🏠 Local:    http://127.0.0.1:9099/redoc
+📡 Network:  http://192.168.100.200:9099/redoc
+2026-02-17 02:25:40.450 | INFO     | config.get_redis:close_redis_pool:85 - ✅️ 关闭redis连接成功
+2026-02-17 02:25:40.451 | INFO     | config.get_scheduler:close_system_scheduler:768 - ✅️ 关闭定时任务成功
+2026-02-17 02:25:40.451 | INFO     | logging:callHandlers:1736 - Scheduler has been shut down
+2026-02-17 02:25:40.458 | INFO     | config.get_scheduler:close_system_scheduler:774 - 🔓 Worker 97971-005dcf 释放 Application 锁
+2026-02-17 02:25:42.187 | INFO     | server:lifespan:89 - ⏰️ RuoYi-FastAPI开始启动
+2026-02-17 02:25:42.187 | INFO     | utils.common_util:worship:22 - 
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG                  //
+////////////////////////////////////////////////////////////////////
+    
+2026-02-17 02:25:42.187 | INFO     | config.get_db:init_create_table:25 - 🔎 初始化数据库连接...
+2026-02-17 02:25:42.194 | INFO     | logging:callHandlers:1736 - SELECT DATABASE()
+2026-02-17 02:25:42.194 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.197 | INFO     | logging:callHandlers:1736 - SELECT @@sql_mode
+2026-02-17 02:25:42.197 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.198 | INFO     | logging:callHandlers:1736 - SELECT @@lower_case_table_names
+2026-02-17 02:25:42.198 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.200 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:25:42.200 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_config`
+2026-02-17 02:25:42.200 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.202 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_type`
+2026-02-17 02:25:42.202 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.203 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_data`
+2026-02-17 02:25:42.204 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.206 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job`
+2026-02-17 02:25:42.206 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.207 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job_log`
+2026-02-17 02:25:42.207 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.209 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_logininfor`
+2026-02-17 02:25:42.209 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.210 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_oper_log`
+2026-02-17 02:25:42.210 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.211 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dept`
+2026-02-17 02:25:42.211 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.212 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user`
+2026-02-17 02:25:42.213 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.214 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_role`
+2026-02-17 02:25:42.214 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.215 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_post`
+2026-02-17 02:25:42.215 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.216 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_menu`
+2026-02-17 02:25:42.216 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.217 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_post`
+2026-02-17 02:25:42.217 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.218 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role`
+2026-02-17 02:25:42.218 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.219 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_dept`
+2026-02-17 02:25:42.219 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.220 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_menu`
+2026-02-17 02:25:42.220 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.221 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_notice`
+2026-02-17 02:25:42.221 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.222 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_chat_config`
+2026-02-17 02:25:42.222 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.223 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_models`
+2026-02-17 02:25:42.223 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.224 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table`
+2026-02-17 02:25:42.224 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.225 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table_column`
+2026-02-17 02:25:42.225 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:25:42.226 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-02-17 02:25:42.228 | INFO     | config.get_db:init_create_table:28 - ✅️ 数据库连接成功
+2026-02-17 02:25:42.228 | INFO     | config.get_redis:check_redis_connection:57 - 🔎 开始连接redis...
+2026-02-17 02:25:42.229 | INFO     | config.get_redis:check_redis_connection:63 - ✅️ redis连接成功
+2026-02-17 02:25:42.230 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:25:42.238 | INFO     | logging:callHandlers:1736 - SELECT sys_dict_type.dict_id, sys_dict_type.dict_name, sys_dict_type.dict_type, sys_dict_type.status, sys_dict_type.create_by, sys_dict_type.create_time, sys_dict_type.update_by, sys_dict_type.update_time, sys_dict_type.remark 
+FROM sys_dict_type
+2026-02-17 02:25:42.238 | INFO     | logging:callHandlers:1736 - [generated in 0.00027s] ()
+2026-02-17 02:25:42.240 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:25:42.242 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:25:42.243 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_config.config_id, sys_config.config_name, sys_config.config_key, sys_config.config_value, sys_config.config_type, sys_config.create_by, sys_config.create_time, sys_config.update_by, sys_config.update_time, sys_config.remark 
+FROM sys_config 
+WHERE true = 1 ORDER BY sys_config.config_id
+2026-02-17 02:25:42.243 | INFO     | logging:callHandlers:1736 - [generated in 0.00039s] ()
+2026-02-17 02:25:42.244 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:25:42.245 | INFO     | config.get_scheduler:init_system_scheduler:210 - 🔎 Worker 99380-112988 尝试获取 Application 锁...
+2026-02-17 02:25:42.247 | INFO     | config.get_scheduler:_start_scheduler_as_leader:235 - 🎯 Worker 99380-112988 持有 Application 锁，开始启动定时任务...
+2026-02-17 02:25:42.262 | INFO     | logging:callHandlers:1736 - Scheduler started
+2026-02-17 02:25:42.277 | INFO     | config.get_scheduler:_start_scheduler_as_leader:261 - ✅️ 系统初始定时任务加载成功
+2026-02-17 02:25:42.778 | INFO     | server:lifespan:101 - 🚀 RuoYi-FastAPI启动成功
+2026-02-17 02:25:42.780 | INFO     | server:lifespan:113 - 💻 应用地址:
+🏠 Local:    http://127.0.0.1:9099
+📡 Network:  http://192.168.100.200:9099
+2026-02-17 02:25:42.781 | INFO     | server:lifespan:120 - 📄 Swagger文档:
+🏠 Local:    http://127.0.0.1:9099/docs
+📡 Network:  http://192.168.100.200:9099/docs
+2026-02-17 02:25:42.781 | INFO     | server:lifespan:127 - 📚 ReDoc文档:
+🏠 Local:    http://127.0.0.1:9099/redoc
+📡 Network:  http://192.168.100.200:9099/redoc
+2026-02-17 02:26:16.316 | INFO     | config.get_redis:close_redis_pool:85 - ✅️ 关闭redis连接成功
+2026-02-17 02:26:16.317 | INFO     | config.get_scheduler:close_system_scheduler:768 - ✅️ 关闭定时任务成功
+2026-02-17 02:26:16.317 | INFO     | logging:callHandlers:1736 - Scheduler has been shut down
+2026-02-17 02:26:16.325 | INFO     | config.get_scheduler:close_system_scheduler:774 - 🔓 Worker 99380-112988 释放 Application 锁
+2026-02-17 02:26:17.869 | INFO     | server:lifespan:89 - ⏰️ RuoYi-FastAPI开始启动
+2026-02-17 02:26:17.869 | INFO     | utils.common_util:worship:22 - 
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG                  //
+////////////////////////////////////////////////////////////////////
+    
+2026-02-17 02:26:17.869 | INFO     | config.get_db:init_create_table:25 - 🔎 初始化数据库连接...
+2026-02-17 02:26:17.879 | INFO     | logging:callHandlers:1736 - SELECT DATABASE()
+2026-02-17 02:26:17.879 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.882 | INFO     | logging:callHandlers:1736 - SELECT @@sql_mode
+2026-02-17 02:26:17.882 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.883 | INFO     | logging:callHandlers:1736 - SELECT @@lower_case_table_names
+2026-02-17 02:26:17.883 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.886 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:26:17.886 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_config`
+2026-02-17 02:26:17.886 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.891 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_type`
+2026-02-17 02:26:17.891 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.894 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_data`
+2026-02-17 02:26:17.894 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.896 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job`
+2026-02-17 02:26:17.896 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.900 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job_log`
+2026-02-17 02:26:17.900 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.903 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_logininfor`
+2026-02-17 02:26:17.903 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.907 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_oper_log`
+2026-02-17 02:26:17.907 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.909 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dept`
+2026-02-17 02:26:17.909 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.911 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user`
+2026-02-17 02:26:17.911 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.914 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_role`
+2026-02-17 02:26:17.914 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.916 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_post`
+2026-02-17 02:26:17.916 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.918 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_menu`
+2026-02-17 02:26:17.918 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.920 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_post`
+2026-02-17 02:26:17.920 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.922 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role`
+2026-02-17 02:26:17.923 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.924 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_dept`
+2026-02-17 02:26:17.924 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.925 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_menu`
+2026-02-17 02:26:17.925 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.926 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_notice`
+2026-02-17 02:26:17.926 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.928 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_chat_config`
+2026-02-17 02:26:17.928 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.928 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_models`
+2026-02-17 02:26:17.929 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.929 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table`
+2026-02-17 02:26:17.930 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.931 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table_column`
+2026-02-17 02:26:17.931 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:26:17.932 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-02-17 02:26:17.933 | INFO     | config.get_db:init_create_table:28 - ✅️ 数据库连接成功
+2026-02-17 02:26:17.933 | INFO     | config.get_redis:check_redis_connection:57 - 🔎 开始连接redis...
+2026-02-17 02:26:17.934 | INFO     | config.get_redis:check_redis_connection:63 - ✅️ redis连接成功
+2026-02-17 02:26:17.935 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:26:17.943 | INFO     | logging:callHandlers:1736 - SELECT sys_dict_type.dict_id, sys_dict_type.dict_name, sys_dict_type.dict_type, sys_dict_type.status, sys_dict_type.create_by, sys_dict_type.create_time, sys_dict_type.update_by, sys_dict_type.update_time, sys_dict_type.remark 
+FROM sys_dict_type
+2026-02-17 02:26:17.943 | INFO     | logging:callHandlers:1736 - [generated in 0.00026s] ()
+2026-02-17 02:26:17.945 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:26:17.946 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:26:17.947 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_config.config_id, sys_config.config_name, sys_config.config_key, sys_config.config_value, sys_config.config_type, sys_config.create_by, sys_config.create_time, sys_config.update_by, sys_config.update_time, sys_config.remark 
+FROM sys_config 
+WHERE true = 1 ORDER BY sys_config.config_id
+2026-02-17 02:26:17.947 | INFO     | logging:callHandlers:1736 - [generated in 0.00014s] ()
+2026-02-17 02:26:17.948 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:26:17.950 | INFO     | config.get_scheduler:init_system_scheduler:210 - 🔎 Worker 99951-b892ad 尝试获取 Application 锁...
+2026-02-17 02:26:17.951 | INFO     | config.get_scheduler:_start_scheduler_as_leader:235 - 🎯 Worker 99951-b892ad 持有 Application 锁，开始启动定时任务...
+2026-02-17 02:26:17.967 | INFO     | logging:callHandlers:1736 - Scheduler started
+2026-02-17 02:26:17.982 | INFO     | config.get_scheduler:_start_scheduler_as_leader:261 - ✅️ 系统初始定时任务加载成功
+2026-02-17 02:26:18.483 | INFO     | server:lifespan:101 - 🚀 RuoYi-FastAPI启动成功
+2026-02-17 02:26:18.485 | INFO     | server:lifespan:113 - 💻 应用地址:
+🏠 Local:    http://127.0.0.1:9099
+📡 Network:  http://192.168.100.200:9099
+2026-02-17 02:26:18.485 | INFO     | server:lifespan:120 - 📄 Swagger文档:
+🏠 Local:    http://127.0.0.1:9099/docs
+📡 Network:  http://192.168.100.200:9099/docs
+2026-02-17 02:26:18.485 | INFO     | server:lifespan:127 - 📚 ReDoc文档:
+🏠 Local:    http://127.0.0.1:9099/redoc
+📡 Network:  http://192.168.100.200:9099/redoc
+2026-02-17 02:29:11.213 | INFO     | config.get_redis:close_redis_pool:85 - ✅️ 关闭redis连接成功
+2026-02-17 02:29:11.214 | INFO     | config.get_scheduler:close_system_scheduler:768 - ✅️ 关闭定时任务成功
+2026-02-17 02:29:11.214 | INFO     | logging:callHandlers:1736 - Scheduler has been shut down
+2026-02-17 02:29:11.223 | INFO     | config.get_scheduler:close_system_scheduler:774 - 🔓 Worker 99951-b892ad 释放 Application 锁
+2026-02-17 02:29:12.802 | INFO     | server:lifespan:89 - ⏰️ RuoYi-FastAPI开始启动
+2026-02-17 02:29:12.802 | INFO     | utils.common_util:worship:22 - 
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG                  //
+////////////////////////////////////////////////////////////////////
+    
+2026-02-17 02:29:12.802 | INFO     | config.get_db:init_create_table:25 - 🔎 初始化数据库连接...
+2026-02-17 02:29:12.812 | INFO     | logging:callHandlers:1736 - SELECT DATABASE()
+2026-02-17 02:29:12.812 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.814 | INFO     | logging:callHandlers:1736 - SELECT @@sql_mode
+2026-02-17 02:29:12.814 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.815 | INFO     | logging:callHandlers:1736 - SELECT @@lower_case_table_names
+2026-02-17 02:29:12.815 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.817 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:29:12.817 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_config`
+2026-02-17 02:29:12.818 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.822 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_type`
+2026-02-17 02:29:12.822 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.824 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_data`
+2026-02-17 02:29:12.824 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.826 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job`
+2026-02-17 02:29:12.826 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.828 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job_log`
+2026-02-17 02:29:12.828 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.830 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_logininfor`
+2026-02-17 02:29:12.830 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.832 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_oper_log`
+2026-02-17 02:29:12.832 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.834 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dept`
+2026-02-17 02:29:12.834 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.836 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user`
+2026-02-17 02:29:12.836 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.838 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_role`
+2026-02-17 02:29:12.838 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.840 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_post`
+2026-02-17 02:29:12.841 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.843 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_menu`
+2026-02-17 02:29:12.843 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.845 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_post`
+2026-02-17 02:29:12.845 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.846 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role`
+2026-02-17 02:29:12.846 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.849 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_dept`
+2026-02-17 02:29:12.849 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.850 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_menu`
+2026-02-17 02:29:12.851 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.852 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_notice`
+2026-02-17 02:29:12.852 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.854 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_chat_config`
+2026-02-17 02:29:12.854 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.856 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_models`
+2026-02-17 02:29:12.856 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.858 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table`
+2026-02-17 02:29:12.858 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.860 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table_column`
+2026-02-17 02:29:12.860 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:29:12.863 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-02-17 02:29:12.867 | INFO     | config.get_db:init_create_table:28 - ✅️ 数据库连接成功
+2026-02-17 02:29:12.867 | INFO     | config.get_redis:check_redis_connection:57 - 🔎 开始连接redis...
+2026-02-17 02:29:12.869 | INFO     | config.get_redis:check_redis_connection:63 - ✅️ redis连接成功
+2026-02-17 02:29:12.870 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:29:12.879 | INFO     | logging:callHandlers:1736 - SELECT sys_dict_type.dict_id, sys_dict_type.dict_name, sys_dict_type.dict_type, sys_dict_type.status, sys_dict_type.create_by, sys_dict_type.create_time, sys_dict_type.update_by, sys_dict_type.update_time, sys_dict_type.remark 
+FROM sys_dict_type
+2026-02-17 02:29:12.879 | INFO     | logging:callHandlers:1736 - [generated in 0.00025s] ()
+2026-02-17 02:29:12.881 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:29:12.885 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:29:12.886 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_config.config_id, sys_config.config_name, sys_config.config_key, sys_config.config_value, sys_config.config_type, sys_config.create_by, sys_config.create_time, sys_config.update_by, sys_config.update_time, sys_config.remark 
+FROM sys_config 
+WHERE true = 1 ORDER BY sys_config.config_id
+2026-02-17 02:29:12.886 | INFO     | logging:callHandlers:1736 - [generated in 0.00015s] ()
+2026-02-17 02:29:12.888 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:29:12.890 | INFO     | config.get_scheduler:init_system_scheduler:210 - 🔎 Worker 3201-1cd45e 尝试获取 Application 锁...
+2026-02-17 02:29:12.892 | INFO     | config.get_scheduler:_start_scheduler_as_leader:235 - 🎯 Worker 3201-1cd45e 持有 Application 锁，开始启动定时任务...
+2026-02-17 02:29:12.914 | INFO     | logging:callHandlers:1736 - Scheduler started
+2026-02-17 02:29:12.929 | INFO     | config.get_scheduler:_start_scheduler_as_leader:261 - ✅️ 系统初始定时任务加载成功
+2026-02-17 02:29:13.430 | INFO     | server:lifespan:101 - 🚀 RuoYi-FastAPI启动成功
+2026-02-17 02:29:13.432 | INFO     | server:lifespan:113 - 💻 应用地址:
+🏠 Local:    http://127.0.0.1:9099
+📡 Network:  http://192.168.100.200:9099
+2026-02-17 02:29:13.432 | INFO     | server:lifespan:120 - 📄 Swagger文档:
+🏠 Local:    http://127.0.0.1:9099/docs
+📡 Network:  http://192.168.100.200:9099/docs
+2026-02-17 02:29:13.432 | INFO     | server:lifespan:127 - 📚 ReDoc文档:
+🏠 Local:    http://127.0.0.1:9099/redoc
+📡 Network:  http://192.168.100.200:9099/redoc
+2026-02-17 02:29:16.945 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:29:16.946 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark 
+FROM sys_user 
+WHERE sys_user.del_flag = %s AND sys_user.user_name = %s ORDER BY sys_user.create_time DESC
+2026-02-17 02:29:16.946 | INFO     | logging:callHandlers:1736 - [generated in 0.00017s] ('0', 'string')
+2026-02-17 02:29:16.950 | INFO     | logging:callHandlers:1736 - INSERT INTO sys_user (dept_id, user_name, nick_name, password, login_date, pwd_update_date, create_time, update_time, remark) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+2026-02-17 02:29:16.950 | INFO     | logging:callHandlers:1736 - [generated in 0.00021s] (None, 'string', 'string', '$2b$12$Iz3jQSW.tciJLv/toCsqT.B0icSF87B2fK3QqHVXEDL55uufugL9i', None, datetime.datetime(2026, 2, 17, 2, 29, 16, 945263), datetime.datetime(2026, 2, 17, 2, 29, 12, 213086), datetime.datetime(2026, 2, 17, 2, 29, 12, 213099), None)
+2026-02-17 02:29:16.952 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-02-17 02:29:16.960 | INFO     | module_admin.controller.login_controller:register_user:131 - 新增成功
+2026-02-17 02:33:06.760 | INFO     | config.get_redis:close_redis_pool:85 - ✅️ 关闭redis连接成功
+2026-02-17 02:33:06.761 | INFO     | config.get_scheduler:close_system_scheduler:768 - ✅️ 关闭定时任务成功
+2026-02-17 02:33:06.761 | INFO     | logging:callHandlers:1736 - Scheduler has been shut down
+2026-02-17 02:33:06.766 | INFO     | config.get_scheduler:close_system_scheduler:774 - 🔓 Worker 3201-1cd45e 释放 Application 锁
+2026-02-17 02:33:08.384 | INFO     | server:lifespan:89 - ⏰️ RuoYi-FastAPI开始启动
+2026-02-17 02:33:08.384 | INFO     | utils.common_util:worship:22 - 
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG                  //
+////////////////////////////////////////////////////////////////////
+    
+2026-02-17 02:33:08.385 | INFO     | config.get_db:init_create_table:25 - 🔎 初始化数据库连接...
+2026-02-17 02:33:08.395 | INFO     | logging:callHandlers:1736 - SELECT DATABASE()
+2026-02-17 02:33:08.395 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.398 | INFO     | logging:callHandlers:1736 - SELECT @@sql_mode
+2026-02-17 02:33:08.398 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.399 | INFO     | logging:callHandlers:1736 - SELECT @@lower_case_table_names
+2026-02-17 02:33:08.399 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.402 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:33:08.402 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_config`
+2026-02-17 02:33:08.402 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.406 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_type`
+2026-02-17 02:33:08.406 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.408 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_data`
+2026-02-17 02:33:08.408 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.409 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job`
+2026-02-17 02:33:08.409 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.411 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job_log`
+2026-02-17 02:33:08.411 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.412 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_logininfor`
+2026-02-17 02:33:08.412 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.413 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_oper_log`
+2026-02-17 02:33:08.413 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.414 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dept`
+2026-02-17 02:33:08.414 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.415 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user`
+2026-02-17 02:33:08.415 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.416 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_role`
+2026-02-17 02:33:08.417 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.417 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_post`
+2026-02-17 02:33:08.417 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.418 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_menu`
+2026-02-17 02:33:08.419 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.420 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_post`
+2026-02-17 02:33:08.420 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.421 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role`
+2026-02-17 02:33:08.421 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.423 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_dept`
+2026-02-17 02:33:08.423 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.425 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_menu`
+2026-02-17 02:33:08.426 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.428 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_notice`
+2026-02-17 02:33:08.428 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.431 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_chat_config`
+2026-02-17 02:33:08.431 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.433 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_models`
+2026-02-17 02:33:08.433 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.436 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table`
+2026-02-17 02:33:08.436 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.439 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table_column`
+2026-02-17 02:33:08.439 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-02-17 02:33:08.441 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-02-17 02:33:08.444 | INFO     | config.get_db:init_create_table:28 - ✅️ 数据库连接成功
+2026-02-17 02:33:08.444 | INFO     | config.get_redis:check_redis_connection:57 - 🔎 开始连接redis...
+2026-02-17 02:33:08.445 | INFO     | config.get_redis:check_redis_connection:63 - ✅️ redis连接成功
+2026-02-17 02:33:08.446 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:33:08.455 | INFO     | logging:callHandlers:1736 - SELECT sys_dict_type.dict_id, sys_dict_type.dict_name, sys_dict_type.dict_type, sys_dict_type.status, sys_dict_type.create_by, sys_dict_type.create_time, sys_dict_type.update_by, sys_dict_type.update_time, sys_dict_type.remark 
+FROM sys_dict_type
+2026-02-17 02:33:08.455 | INFO     | logging:callHandlers:1736 - [generated in 0.00032s] ()
+2026-02-17 02:33:08.457 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:33:08.460 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:33:08.461 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_config.config_id, sys_config.config_name, sys_config.config_key, sys_config.config_value, sys_config.config_type, sys_config.create_by, sys_config.create_time, sys_config.update_by, sys_config.update_time, sys_config.remark 
+FROM sys_config 
+WHERE true = 1 ORDER BY sys_config.config_id
+2026-02-17 02:33:08.461 | INFO     | logging:callHandlers:1736 - [generated in 0.00015s] ()
+2026-02-17 02:33:08.463 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:33:08.465 | INFO     | config.get_scheduler:init_system_scheduler:210 - 🔎 Worker 6820-ff93ac 尝试获取 Application 锁...
+2026-02-17 02:33:08.466 | INFO     | config.get_scheduler:_start_scheduler_as_leader:235 - 🎯 Worker 6820-ff93ac 持有 Application 锁，开始启动定时任务...
+2026-02-17 02:33:08.491 | INFO     | logging:callHandlers:1736 - Scheduler started
+2026-02-17 02:33:08.506 | INFO     | config.get_scheduler:_start_scheduler_as_leader:261 - ✅️ 系统初始定时任务加载成功
+2026-02-17 02:33:09.008 | INFO     | server:lifespan:101 - 🚀 RuoYi-FastAPI启动成功
+2026-02-17 02:33:09.010 | INFO     | server:lifespan:113 - 💻 应用地址:
+🏠 Local:    http://127.0.0.1:9099
+📡 Network:  http://192.168.100.200:9099
+2026-02-17 02:33:09.010 | INFO     | server:lifespan:120 - 📄 Swagger文档:
+🏠 Local:    http://127.0.0.1:9099/docs
+📡 Network:  http://192.168.100.200:9099/docs
+2026-02-17 02:33:09.010 | INFO     | server:lifespan:127 - 📚 ReDoc文档:
+🏠 Local:    http://127.0.0.1:9099/redoc
+📡 Network:  http://192.168.100.200:9099/redoc
+2026-02-17 02:33:24.032 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:33:24.033 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark 
+FROM sys_user 
+WHERE sys_user.del_flag = %s AND sys_user.user_name = %s ORDER BY sys_user.create_time DESC
+2026-02-17 02:33:24.033 | INFO     | logging:callHandlers:1736 - [generated in 0.00018s] ('0', 'string1')
+2026-02-17 02:33:24.036 | INFO     | logging:callHandlers:1736 - INSERT INTO sys_user (dept_id, user_name, nick_name, password, login_date, pwd_update_date, create_time, update_time, remark) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+2026-02-17 02:33:24.036 | INFO     | logging:callHandlers:1736 - [generated in 0.00022s] (None, 'string1', 'string1', '$2b$12$1aqsqmwHRi6c.VIhymTNI.LMXch9uZ11rtL7JPrhoeoYorHebErim', None, datetime.datetime(2026, 2, 17, 2, 33, 24, 32340), datetime.datetime(2026, 2, 17, 2, 33, 7, 820823), datetime.datetime(2026, 2, 17, 2, 33, 7, 820833), None)
+2026-02-17 02:33:24.039 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-02-17 02:33:24.048 | INFO     | module_admin.controller.login_controller:register_user:131 - 新增成功
+2026-02-17 02:34:46.171 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:34:46.174 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark, sys_dept.dept_id AS dept_id_1, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email AS email_1, sys_dept.status AS status_1, sys_dept.del_flag AS del_flag_1, sys_dept.create_by AS create_by_1, sys_dept.create_time AS create_time_1, sys_dept.update_by AS update_by_1, sys_dept.update_time AS update_time_1 
+FROM sys_user LEFT OUTER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.user_name = %s AND sys_user.del_flag = %s
+2026-02-17 02:34:46.174 | INFO     | logging:callHandlers:1736 - [generated in 0.00041s] ('0', '0', 'string', '0')
+2026-02-17 02:34:46.361 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_post.post_id, sys_post.post_code, sys_post.post_name, sys_post.post_sort, sys_post.status, sys_post.create_by, sys_post.create_time, sys_post.update_by, sys_post.update_time, sys_post.remark 
+FROM sys_post 
+WHERE true = 1 ORDER BY sys_post.post_sort
+2026-02-17 02:34:46.362 | INFO     | logging:callHandlers:1736 - [generated in 0.00025s] ()
+2026-02-17 02:34:46.367 | INFO     | logging:callHandlers:1736 - SELECT sys_role.role_id, sys_role.role_name, sys_role.role_key, sys_role.role_sort, sys_role.data_scope, sys_role.menu_check_strictly, sys_role.dept_check_strictly, sys_role.status, sys_role.del_flag, sys_role.create_by, sys_role.create_time, sys_role.update_by, sys_role.update_time, sys_role.remark 
+FROM sys_role 
+WHERE sys_role.role_id != %s AND sys_role.status = %s AND sys_role.del_flag = %s
+2026-02-17 02:34:46.367 | INFO     | logging:callHandlers:1736 - [generated in 0.00024s] (1, '0', '0')
+2026-02-17 02:34:46.371 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark 
+FROM sys_user 
+WHERE sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.371 | INFO     | logging:callHandlers:1736 - [generated in 0.00016s] ('0', 1)
+2026-02-17 02:34:46.373 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dept.dept_id, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email, sys_dept.status, sys_dept.del_flag, sys_dept.create_by, sys_dept.create_time, sys_dept.update_by, sys_dept.update_time 
+FROM sys_user INNER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.373 | INFO     | logging:callHandlers:1736 - [generated in 0.00014s] ('0', '0', '0', 1)
+2026-02-17 02:34:46.376 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_role.role_id, sys_role.role_name, sys_role.role_key, sys_role.role_sort, sys_role.data_scope, sys_role.menu_check_strictly, sys_role.dept_check_strictly, sys_role.status, sys_role.del_flag, sys_role.create_by, sys_role.create_time, sys_role.update_by, sys_role.update_time, sys_role.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id INNER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s 
+WHERE sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.376 | INFO     | logging:callHandlers:1736 - [generated in 0.00015s] ('0', '0', '0', 1)
+2026-02-17 02:34:46.379 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_post.post_id, sys_post.post_code, sys_post.post_name, sys_post.post_sort, sys_post.status, sys_post.create_by, sys_post.create_time, sys_post.update_by, sys_post.update_time, sys_post.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_post ON sys_user.user_id = sys_user_post.user_id INNER JOIN sys_post ON sys_user_post.post_id = sys_post.post_id AND sys_post.status = %s 
+WHERE sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.379 | INFO     | logging:callHandlers:1736 - [generated in 0.00014s] ('0', '0', 1)
+2026-02-17 02:34:46.383 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_menu.menu_id, sys_menu.menu_name, sys_menu.parent_id, sys_menu.order_num, sys_menu.path, sys_menu.component, sys_menu.query, sys_menu.route_name, sys_menu.is_frame, sys_menu.is_cache, sys_menu.menu_type, sys_menu.visible, sys_menu.status, sys_menu.perms, sys_menu.icon, sys_menu.create_by, sys_menu.create_time, sys_menu.update_by, sys_menu.update_time, sys_menu.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id LEFT OUTER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s LEFT OUTER JOIN sys_role_menu ON sys_role.role_id = sys_role_menu.role_id INNER JOIN sys_menu ON sys_role_menu.menu_id = sys_menu.menu_id AND sys_menu.status = %s 
+WHERE sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.383 | INFO     | logging:callHandlers:1736 - [generated in 0.00023s] ('0', '0', '0', '0', 1)
+2026-02-17 02:34:46.391 | INFO     | logging:callHandlers:1736 - UPDATE sys_user SET login_date=%s WHERE sys_user.user_id = %s
+2026-02-17 02:34:46.391 | INFO     | logging:callHandlers:1736 - [generated in 0.00016s] (datetime.datetime(2026, 2, 17, 2, 34, 46, 361174), 1)
+2026-02-17 02:34:46.393 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-02-17 02:34:46.404 | INFO     | module_admin.controller.login_controller:login:78 - 登录成功
+2026-02-17 02:34:46.408 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:34:46.408 | INFO     | logging:callHandlers:1736 - INSERT INTO sys_logininfor (user_name, login_location, browser, os, status, msg, login_time) VALUES (%s, %s, %s, %s, %s, %s, %s)
+2026-02-17 02:34:46.408 | INFO     | logging:callHandlers:1736 - [generated in 0.00016s] ('string', '未知', 'Chrome 144', 'Mac OS X 10', '0', '登录成功', datetime.datetime(2026, 2, 17, 2, 34, 46, 165397))
+2026-02-17 02:34:46.412 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-02-17 02:34:46.423 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:34:46.423 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark 
+FROM sys_user 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.423 | INFO     | logging:callHandlers:1736 - [generated in 0.00019s] ('0', '0', 1)
+2026-02-17 02:34:46.426 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dept.dept_id, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email, sys_dept.status, sys_dept.del_flag, sys_dept.create_by, sys_dept.create_time, sys_dept.update_by, sys_dept.update_time 
+FROM sys_user INNER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.426 | INFO     | logging:callHandlers:1736 - [generated in 0.00048s] ('0', '0', '0', '0', 1)
+2026-02-17 02:34:46.430 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_role.role_id, sys_role.role_name, sys_role.role_key, sys_role.role_sort, sys_role.data_scope, sys_role.menu_check_strictly, sys_role.dept_check_strictly, sys_role.status, sys_role.del_flag, sys_role.create_by, sys_role.create_time, sys_role.update_by, sys_role.update_time, sys_role.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id INNER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.430 | INFO     | logging:callHandlers:1736 - [generated in 0.00030s] ('0', '0', '0', '0', 1)
+2026-02-17 02:34:46.435 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_post.post_id, sys_post.post_code, sys_post.post_name, sys_post.post_sort, sys_post.status, sys_post.create_by, sys_post.create_time, sys_post.update_by, sys_post.update_time, sys_post.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_post ON sys_user.user_id = sys_user_post.user_id INNER JOIN sys_post ON sys_user_post.post_id = sys_post.post_id AND sys_post.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.435 | INFO     | logging:callHandlers:1736 - [generated in 0.00032s] ('0', '0', '0', 1)
+2026-02-17 02:34:46.438 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_menu.menu_id, sys_menu.menu_name, sys_menu.parent_id, sys_menu.order_num, sys_menu.path, sys_menu.component, sys_menu.query, sys_menu.route_name, sys_menu.is_frame, sys_menu.is_cache, sys_menu.menu_type, sys_menu.visible, sys_menu.status, sys_menu.perms, sys_menu.icon, sys_menu.create_by, sys_menu.create_time, sys_menu.update_by, sys_menu.update_time, sys_menu.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id LEFT OUTER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s LEFT OUTER JOIN sys_role_menu ON sys_role.role_id = sys_role_menu.role_id INNER JOIN sys_menu ON sys_role_menu.menu_id = sys_menu.menu_id AND sys_menu.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s ORDER BY sys_menu.order_num
+2026-02-17 02:34:46.438 | INFO     | logging:callHandlers:1736 - [generated in 0.00017s] ('0', '0', '0', '0', '0', 1)
+2026-02-17 02:34:46.443 | INFO     | module_admin.controller.login_controller:get_login_user_info:96 - 获取成功
+2026-02-17 02:34:46.444 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:34:46.448 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:34:46.448 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark 
+FROM sys_user 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.449 | INFO     | logging:callHandlers:1736 - [cached since 0.02534s ago] ('0', '0', 1)
+2026-02-17 02:34:46.451 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dept.dept_id, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email, sys_dept.status, sys_dept.del_flag, sys_dept.create_by, sys_dept.create_time, sys_dept.update_by, sys_dept.update_time 
+FROM sys_user INNER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.451 | INFO     | logging:callHandlers:1736 - [cached since 0.02535s ago] ('0', '0', '0', '0', 1)
+2026-02-17 02:34:46.453 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_role.role_id, sys_role.role_name, sys_role.role_key, sys_role.role_sort, sys_role.data_scope, sys_role.menu_check_strictly, sys_role.dept_check_strictly, sys_role.status, sys_role.del_flag, sys_role.create_by, sys_role.create_time, sys_role.update_by, sys_role.update_time, sys_role.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id INNER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.453 | INFO     | logging:callHandlers:1736 - [cached since 0.02356s ago] ('0', '0', '0', '0', 1)
+2026-02-17 02:34:46.455 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_post.post_id, sys_post.post_code, sys_post.post_name, sys_post.post_sort, sys_post.status, sys_post.create_by, sys_post.create_time, sys_post.update_by, sys_post.update_time, sys_post.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_post ON sys_user.user_id = sys_user_post.user_id INNER JOIN sys_post ON sys_user_post.post_id = sys_post.post_id AND sys_post.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.455 | INFO     | logging:callHandlers:1736 - [cached since 0.02036s ago] ('0', '0', '0', 1)
+2026-02-17 02:34:46.457 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_menu.menu_id, sys_menu.menu_name, sys_menu.parent_id, sys_menu.order_num, sys_menu.path, sys_menu.component, sys_menu.query, sys_menu.route_name, sys_menu.is_frame, sys_menu.is_cache, sys_menu.menu_type, sys_menu.visible, sys_menu.status, sys_menu.perms, sys_menu.icon, sys_menu.create_by, sys_menu.create_time, sys_menu.update_by, sys_menu.update_time, sys_menu.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id LEFT OUTER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s LEFT OUTER JOIN sys_role_menu ON sys_role.role_id = sys_role_menu.role_id INNER JOIN sys_menu ON sys_role_menu.menu_id = sys_menu.menu_id AND sys_menu.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s ORDER BY sys_menu.order_num
+2026-02-17 02:34:46.457 | INFO     | logging:callHandlers:1736 - [cached since 0.0198s ago] ('0', '0', '0', '0', '0', 1)
+2026-02-17 02:34:46.461 | INFO     | module_admin.controller.login_controller:get_login_user_routers:112 - 获取成功
+2026-02-17 02:34:46.464 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark 
+FROM sys_user 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.464 | INFO     | logging:callHandlers:1736 - [cached since 0.04079s ago] ('0', '0', 1)
+2026-02-17 02:34:46.466 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dept.dept_id, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email, sys_dept.status, sys_dept.del_flag, sys_dept.create_by, sys_dept.create_time, sys_dept.update_by, sys_dept.update_time 
+FROM sys_user INNER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.467 | INFO     | logging:callHandlers:1736 - [cached since 0.04073s ago] ('0', '0', '0', '0', 1)
+2026-02-17 02:34:46.468 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_role.role_id, sys_role.role_name, sys_role.role_key, sys_role.role_sort, sys_role.data_scope, sys_role.menu_check_strictly, sys_role.dept_check_strictly, sys_role.status, sys_role.del_flag, sys_role.create_by, sys_role.create_time, sys_role.update_by, sys_role.update_time, sys_role.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id INNER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.468 | INFO     | logging:callHandlers:1736 - [cached since 0.03861s ago] ('0', '0', '0', '0', 1)
+2026-02-17 02:34:46.470 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_post.post_id, sys_post.post_code, sys_post.post_name, sys_post.post_sort, sys_post.status, sys_post.create_by, sys_post.create_time, sys_post.update_by, sys_post.update_time, sys_post.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_post ON sys_user.user_id = sys_user_post.user_id INNER JOIN sys_post ON sys_user_post.post_id = sys_post.post_id AND sys_post.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:34:46.470 | INFO     | logging:callHandlers:1736 - [cached since 0.03474s ago] ('0', '0', '0', 1)
+2026-02-17 02:34:46.471 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_menu.menu_id, sys_menu.menu_name, sys_menu.parent_id, sys_menu.order_num, sys_menu.path, sys_menu.component, sys_menu.query, sys_menu.route_name, sys_menu.is_frame, sys_menu.is_cache, sys_menu.menu_type, sys_menu.visible, sys_menu.status, sys_menu.perms, sys_menu.icon, sys_menu.create_by, sys_menu.create_time, sys_menu.update_by, sys_menu.update_time, sys_menu.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id LEFT OUTER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s LEFT OUTER JOIN sys_role_menu ON sys_role.role_id = sys_role_menu.role_id INNER JOIN sys_menu ON sys_role_menu.menu_id = sys_menu.menu_id AND sys_menu.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s ORDER BY sys_menu.order_num
+2026-02-17 02:34:46.471 | INFO     | logging:callHandlers:1736 - [cached since 0.03335s ago] ('0', '0', '0', '0', '0', 1)
+2026-02-17 02:34:46.472 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:37:38.727 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:37:38.729 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark 
+FROM sys_user 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:37:38.730 | INFO     | logging:callHandlers:1736 - [cached since 172.3s ago] ('0', '0', 1)
+2026-02-17 02:37:38.743 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dept.dept_id, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email, sys_dept.status, sys_dept.del_flag, sys_dept.create_by, sys_dept.create_time, sys_dept.update_by, sys_dept.update_time 
+FROM sys_user INNER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:37:38.743 | INFO     | logging:callHandlers:1736 - [cached since 172.3s ago] ('0', '0', '0', '0', 1)
+2026-02-17 02:37:38.744 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_role.role_id, sys_role.role_name, sys_role.role_key, sys_role.role_sort, sys_role.data_scope, sys_role.menu_check_strictly, sys_role.dept_check_strictly, sys_role.status, sys_role.del_flag, sys_role.create_by, sys_role.create_time, sys_role.update_by, sys_role.update_time, sys_role.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id INNER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:37:38.745 | INFO     | logging:callHandlers:1736 - [cached since 172.3s ago] ('0', '0', '0', '0', 1)
+2026-02-17 02:37:38.746 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_post.post_id, sys_post.post_code, sys_post.post_name, sys_post.post_sort, sys_post.status, sys_post.create_by, sys_post.create_time, sys_post.update_by, sys_post.update_time, sys_post.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_post ON sys_user.user_id = sys_user_post.user_id INNER JOIN sys_post ON sys_user_post.post_id = sys_post.post_id AND sys_post.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:37:38.746 | INFO     | logging:callHandlers:1736 - [cached since 172.3s ago] ('0', '0', '0', 1)
+2026-02-17 02:37:38.748 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_menu.menu_id, sys_menu.menu_name, sys_menu.parent_id, sys_menu.order_num, sys_menu.path, sys_menu.component, sys_menu.query, sys_menu.route_name, sys_menu.is_frame, sys_menu.is_cache, sys_menu.menu_type, sys_menu.visible, sys_menu.status, sys_menu.perms, sys_menu.icon, sys_menu.create_by, sys_menu.create_time, sys_menu.update_by, sys_menu.update_time, sys_menu.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id LEFT OUTER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s LEFT OUTER JOIN sys_role_menu ON sys_role.role_id = sys_role_menu.role_id INNER JOIN sys_menu ON sys_role_menu.menu_id = sys_menu.menu_id AND sys_menu.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s ORDER BY sys_menu.order_num
+2026-02-17 02:37:38.748 | INFO     | logging:callHandlers:1736 - [cached since 172.3s ago] ('0', '0', '0', '0', '0', 1)
+2026-02-17 02:37:38.751 | INFO     | module_admin.controller.login_controller:get_login_user_info:96 - 获取成功
+2026-02-17 02:37:38.754 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 02:37:38.759 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 02:37:38.759 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark 
+FROM sys_user 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:37:38.760 | INFO     | logging:callHandlers:1736 - [cached since 172.3s ago] ('0', '0', 1)
+2026-02-17 02:37:38.763 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dept.dept_id, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email, sys_dept.status, sys_dept.del_flag, sys_dept.create_by, sys_dept.create_time, sys_dept.update_by, sys_dept.update_time 
+FROM sys_user INNER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:37:38.764 | INFO     | logging:callHandlers:1736 - [cached since 172.3s ago] ('0', '0', '0', '0', 1)
+2026-02-17 02:37:38.784 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_role.role_id, sys_role.role_name, sys_role.role_key, sys_role.role_sort, sys_role.data_scope, sys_role.menu_check_strictly, sys_role.dept_check_strictly, sys_role.status, sys_role.del_flag, sys_role.create_by, sys_role.create_time, sys_role.update_by, sys_role.update_time, sys_role.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id INNER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:37:38.784 | INFO     | logging:callHandlers:1736 - [cached since 172.4s ago] ('0', '0', '0', '0', 1)
+2026-02-17 02:37:38.786 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_post.post_id, sys_post.post_code, sys_post.post_name, sys_post.post_sort, sys_post.status, sys_post.create_by, sys_post.create_time, sys_post.update_by, sys_post.update_time, sys_post.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_post ON sys_user.user_id = sys_user_post.user_id INNER JOIN sys_post ON sys_user_post.post_id = sys_post.post_id AND sys_post.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:37:38.786 | INFO     | logging:callHandlers:1736 - [cached since 172.4s ago] ('0', '0', '0', 1)
+2026-02-17 02:37:38.787 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_menu.menu_id, sys_menu.menu_name, sys_menu.parent_id, sys_menu.order_num, sys_menu.path, sys_menu.component, sys_menu.query, sys_menu.route_name, sys_menu.is_frame, sys_menu.is_cache, sys_menu.menu_type, sys_menu.visible, sys_menu.status, sys_menu.perms, sys_menu.icon, sys_menu.create_by, sys_menu.create_time, sys_menu.update_by, sys_menu.update_time, sys_menu.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id LEFT OUTER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s LEFT OUTER JOIN sys_role_menu ON sys_role.role_id = sys_role_menu.role_id INNER JOIN sys_menu ON sys_role_menu.menu_id = sys_menu.menu_id AND sys_menu.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s ORDER BY sys_menu.order_num
+2026-02-17 02:37:38.787 | INFO     | logging:callHandlers:1736 - [cached since 172.4s ago] ('0', '0', '0', '0', '0', 1)
+2026-02-17 02:37:38.790 | INFO     | module_admin.controller.login_controller:get_login_user_routers:112 - 获取成功
+2026-02-17 02:37:38.791 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark 
+FROM sys_user 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:37:38.791 | INFO     | logging:callHandlers:1736 - [cached since 172.4s ago] ('0', '0', 1)
+2026-02-17 02:37:38.792 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dept.dept_id, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email, sys_dept.status, sys_dept.del_flag, sys_dept.create_by, sys_dept.create_time, sys_dept.update_by, sys_dept.update_time 
+FROM sys_user INNER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:37:38.793 | INFO     | logging:callHandlers:1736 - [cached since 172.4s ago] ('0', '0', '0', '0', 1)
+2026-02-17 02:37:38.794 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_role.role_id, sys_role.role_name, sys_role.role_key, sys_role.role_sort, sys_role.data_scope, sys_role.menu_check_strictly, sys_role.dept_check_strictly, sys_role.status, sys_role.del_flag, sys_role.create_by, sys_role.create_time, sys_role.update_by, sys_role.update_time, sys_role.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id INNER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:37:38.794 | INFO     | logging:callHandlers:1736 - [cached since 172.4s ago] ('0', '0', '0', '0', 1)
+2026-02-17 02:37:38.795 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_post.post_id, sys_post.post_code, sys_post.post_name, sys_post.post_sort, sys_post.status, sys_post.create_by, sys_post.create_time, sys_post.update_by, sys_post.update_time, sys_post.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_post ON sys_user.user_id = sys_user_post.user_id INNER JOIN sys_post ON sys_user_post.post_id = sys_post.post_id AND sys_post.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 02:37:38.795 | INFO     | logging:callHandlers:1736 - [cached since 172.4s ago] ('0', '0', '0', 1)
+2026-02-17 02:37:38.797 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_menu.menu_id, sys_menu.menu_name, sys_menu.parent_id, sys_menu.order_num, sys_menu.path, sys_menu.component, sys_menu.query, sys_menu.route_name, sys_menu.is_frame, sys_menu.is_cache, sys_menu.menu_type, sys_menu.visible, sys_menu.status, sys_menu.perms, sys_menu.icon, sys_menu.create_by, sys_menu.create_time, sys_menu.update_by, sys_menu.update_time, sys_menu.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id LEFT OUTER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s LEFT OUTER JOIN sys_role_menu ON sys_role.role_id = sys_role_menu.role_id INNER JOIN sys_menu ON sys_role_menu.menu_id = sys_menu.menu_id AND sys_menu.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s ORDER BY sys_menu.order_num
+2026-02-17 02:37:38.797 | INFO     | logging:callHandlers:1736 - [cached since 172.4s ago] ('0', '0', '0', '0', '0', 1)
+2026-02-17 02:37:38.800 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 03:05:02.890 | INFO     | logging:callHandlers:1736 - Scheduler has been shut down
+2026-02-17 03:05:02.895 | INFO     | config.get_scheduler:_start_scheduler_as_leader:235 - 🎯 Worker 6820-ff93ac 持有 Application 锁，开始启动定时任务...
+2026-02-17 03:05:02.918 | INFO     | logging:callHandlers:1736 - Scheduler started
+2026-02-17 03:05:02.945 | INFO     | config.get_scheduler:_start_scheduler_as_leader:261 - ✅️ 系统初始定时任务加载成功
+2026-02-17 22:34:59.219 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-17 22:34:59.221 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark 
+FROM sys_user 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 22:34:59.221 | INFO     | logging:callHandlers:1736 - [cached since 2.1e+04s ago] ('0', '0', 1)
+2026-02-17 22:34:59.226 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dept.dept_id, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email, sys_dept.status, sys_dept.del_flag, sys_dept.create_by, sys_dept.create_time, sys_dept.update_by, sys_dept.update_time 
+FROM sys_user INNER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 22:34:59.226 | INFO     | logging:callHandlers:1736 - [cached since 2.1e+04s ago] ('0', '0', '0', '0', 1)
+2026-02-17 22:34:59.229 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_role.role_id, sys_role.role_name, sys_role.role_key, sys_role.role_sort, sys_role.data_scope, sys_role.menu_check_strictly, sys_role.dept_check_strictly, sys_role.status, sys_role.del_flag, sys_role.create_by, sys_role.create_time, sys_role.update_by, sys_role.update_time, sys_role.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id INNER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 22:34:59.229 | INFO     | logging:callHandlers:1736 - [cached since 2.1e+04s ago] ('0', '0', '0', '0', 1)
+2026-02-17 22:34:59.232 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_post.post_id, sys_post.post_code, sys_post.post_name, sys_post.post_sort, sys_post.status, sys_post.create_by, sys_post.create_time, sys_post.update_by, sys_post.update_time, sys_post.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_post ON sys_user.user_id = sys_user_post.user_id INNER JOIN sys_post ON sys_user_post.post_id = sys_post.post_id AND sys_post.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-02-17 22:34:59.232 | INFO     | logging:callHandlers:1736 - [cached since 2.1e+04s ago] ('0', '0', '0', 1)
+2026-02-17 22:34:59.235 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_menu.menu_id, sys_menu.menu_name, sys_menu.parent_id, sys_menu.order_num, sys_menu.path, sys_menu.component, sys_menu.query, sys_menu.route_name, sys_menu.is_frame, sys_menu.is_cache, sys_menu.menu_type, sys_menu.visible, sys_menu.status, sys_menu.perms, sys_menu.icon, sys_menu.create_by, sys_menu.create_time, sys_menu.update_by, sys_menu.update_time, sys_menu.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id LEFT OUTER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s LEFT OUTER JOIN sys_role_menu ON sys_role.role_id = sys_role_menu.role_id INNER JOIN sys_menu ON sys_role_menu.menu_id = sys_menu.menu_id AND sys_menu.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s ORDER BY sys_menu.order_num
+2026-02-17 22:34:59.235 | INFO     | logging:callHandlers:1736 - [cached since 2.1e+04s ago] ('0', '0', '0', '0', '0', 1)
+2026-02-17 22:34:59.245 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-17 22:34:59.255 | INFO     | module_admin.controller.login_controller:logout:181 - 退出成功
+2026-02-17 22:34:59.327 | INFO     | module_admin.controller.captcha_controller:get_captcha_image:37 - 编号为4a916097-6be5-4b46-a0ff-434ef4e504e7的会话获取图片验证码成功
+2026-02-18 00:44:53.052 | INFO     | module_admin.controller.captcha_controller:get_captcha_image:37 - 编号为6dd4900d-bcb2-4e50-88aa-5e7dacf878c0的会话获取图片验证码成功
+2026-02-18 21:58:34.735 | INFO     | module_admin.controller.captcha_controller:get_captcha_image:37 - 编号为4852c84a-5910-4140-bcaf-a77ede30c04a的会话获取图片验证码成功
+2026-02-18 21:58:34.745 | INFO     | module_admin.controller.captcha_controller:get_captcha_image:37 - 编号为5580196f-bfba-4f66-9080-1c81d3f4e821的会话获取图片验证码成功
+2026-02-18 21:58:41.290 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-18 21:58:41.291 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark, sys_dept.dept_id AS dept_id_1, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email AS email_1, sys_dept.status AS status_1, sys_dept.del_flag AS del_flag_1, sys_dept.create_by AS create_by_1, sys_dept.create_time AS create_time_1, sys_dept.update_by AS update_by_1, sys_dept.update_time AS update_time_1 
+FROM sys_user LEFT OUTER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.user_name = %s AND sys_user.del_flag = %s
+2026-02-18 21:58:41.292 | INFO     | logging:callHandlers:1736 - [cached since 4.675e+04s ago] ('0', '0', 'admin', '0')
+2026-02-18 21:58:41.303 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-02-18 21:58:41.310 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-18 21:58:41.311 | INFO     | logging:callHandlers:1736 - INSERT INTO sys_logininfor (user_name, login_location, browser, os, status, msg, login_time) VALUES (%s, %s, %s, %s, %s, %s, %s)
+2026-02-18 21:58:41.311 | INFO     | logging:callHandlers:1736 - [cached since 4.675e+04s ago] ('admin', '未知', 'Electron 39', 'Mac OS X 10', '1', '用户不存在', datetime.datetime(2026, 2, 18, 21, 58, 41, 264842))
+2026-02-18 21:58:41.315 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-02-18 23:21:26.143 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-02-18 23:21:26.144 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark 
+FROM sys_user 
+WHERE sys_user.del_flag = %s AND sys_user.user_name = %s ORDER BY sys_user.create_time DESC
+2026-02-18 23:21:26.144 | INFO     | logging:callHandlers:1736 - [cached since 5.179e+04s ago] ('0', 'string3')
+2026-02-18 23:21:26.148 | INFO     | logging:callHandlers:1736 - INSERT INTO sys_user (dept_id, user_name, nick_name, password, login_date, pwd_update_date, create_time, update_time, remark) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+2026-02-18 23:21:26.148 | INFO     | logging:callHandlers:1736 - [cached since 5.179e+04s ago] (None, 'string3', 'string3', '$2b$12$jHX28RPOGAEOOOflPTS2S.HivJ5SVOHq1.Q969Oyp6v6So7TFemei', None, datetime.datetime(2026, 2, 18, 23, 21, 26, 130077), datetime.datetime(2026, 2, 17, 2, 33, 7, 820823), datetime.datetime(2026, 2, 17, 2, 33, 7, 820833), None)
+2026-02-18 23:21:26.152 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-02-18 23:21:26.160 | INFO     | module_admin.controller.login_controller:register_user:131 - 新增成功
