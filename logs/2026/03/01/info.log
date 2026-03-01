@@ -1,0 +1,285 @@
+2026-03-01 20:36:11.125 | INFO     | server:lifespan:89 - ⏰️ RuoYi-FastAPI开始启动
+2026-03-01 20:36:11.126 | INFO     | utils.common_util:worship:22 - 
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG                  //
+////////////////////////////////////////////////////////////////////
+    
+2026-03-01 20:36:11.126 | INFO     | config.get_db:init_create_table:25 - 🔎 初始化数据库连接...
+2026-03-01 20:36:11.136 | INFO     | logging:callHandlers:1736 - SELECT DATABASE()
+2026-03-01 20:36:11.136 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.138 | INFO     | logging:callHandlers:1736 - SELECT @@sql_mode
+2026-03-01 20:36:11.138 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.139 | INFO     | logging:callHandlers:1736 - SELECT @@lower_case_table_names
+2026-03-01 20:36:11.139 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.140 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-03-01 20:36:11.140 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_config`
+2026-03-01 20:36:11.141 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.149 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_type`
+2026-03-01 20:36:11.150 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.153 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dict_data`
+2026-03-01 20:36:11.153 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.155 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job`
+2026-03-01 20:36:11.155 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.157 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_job_log`
+2026-03-01 20:36:11.157 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.158 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_logininfor`
+2026-03-01 20:36:11.158 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.159 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_oper_log`
+2026-03-01 20:36:11.159 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.162 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_dept`
+2026-03-01 20:36:11.163 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.165 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user`
+2026-03-01 20:36:11.165 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.167 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_role`
+2026-03-01 20:36:11.167 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.168 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_user_post`
+2026-03-01 20:36:11.169 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.170 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_menu`
+2026-03-01 20:36:11.171 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.173 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_post`
+2026-03-01 20:36:11.173 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.175 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role`
+2026-03-01 20:36:11.175 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.178 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_dept`
+2026-03-01 20:36:11.178 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.181 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_role_menu`
+2026-03-01 20:36:11.181 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.183 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_notice`
+2026-03-01 20:36:11.184 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.185 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_chat_config`
+2026-03-01 20:36:11.185 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.187 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`ai_models`
+2026-03-01 20:36:11.187 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.189 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_comment`
+2026-03-01 20:36:11.189 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.197 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`sys_comment_like`
+2026-03-01 20:36:11.197 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.199 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table`
+2026-03-01 20:36:11.199 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.200 | INFO     | logging:callHandlers:1736 - DESCRIBE `ruoyi-fastapi`.`gen_table_column`
+2026-03-01 20:36:11.201 | INFO     | logging:callHandlers:1736 - [raw sql] ()
+2026-03-01 20:36:11.202 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-03-01 20:36:11.203 | INFO     | config.get_db:init_create_table:28 - ✅️ 数据库连接成功
+2026-03-01 20:36:11.204 | INFO     | config.get_redis:check_redis_connection:57 - 🔎 开始连接redis...
+2026-03-01 20:36:11.204 | INFO     | config.get_redis:check_redis_connection:63 - ✅️ redis连接成功
+2026-03-01 20:36:11.206 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-03-01 20:36:11.214 | INFO     | logging:callHandlers:1736 - SELECT sys_dict_type.dict_id, sys_dict_type.dict_name, sys_dict_type.dict_type, sys_dict_type.status, sys_dict_type.create_by, sys_dict_type.create_time, sys_dict_type.update_by, sys_dict_type.update_time, sys_dict_type.remark 
+FROM sys_dict_type
+2026-03-01 20:36:11.214 | INFO     | logging:callHandlers:1736 - [generated in 0.00028s] ()
+2026-03-01 20:36:11.218 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dict_data.dict_code, sys_dict_data.dict_sort, sys_dict_data.dict_label, sys_dict_data.dict_value, sys_dict_data.dict_type, sys_dict_data.css_class, sys_dict_data.list_class, sys_dict_data.is_default, sys_dict_data.status, sys_dict_data.create_by, sys_dict_data.create_time, sys_dict_data.update_by, sys_dict_data.update_time, sys_dict_data.remark 
+FROM sys_dict_type LEFT OUTER JOIN sys_dict_data ON sys_dict_type.dict_type = sys_dict_data.dict_type AND sys_dict_data.status = %s 
+WHERE sys_dict_type.dict_type = %s AND sys_dict_type.status = %s ORDER BY sys_dict_data.dict_sort
+2026-03-01 20:36:11.218 | INFO     | logging:callHandlers:1736 - [generated in 0.00021s] ('0', 'sys_user_sex', '0')
+2026-03-01 20:36:11.221 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dict_data.dict_code, sys_dict_data.dict_sort, sys_dict_data.dict_label, sys_dict_data.dict_value, sys_dict_data.dict_type, sys_dict_data.css_class, sys_dict_data.list_class, sys_dict_data.is_default, sys_dict_data.status, sys_dict_data.create_by, sys_dict_data.create_time, sys_dict_data.update_by, sys_dict_data.update_time, sys_dict_data.remark 
+FROM sys_dict_type LEFT OUTER JOIN sys_dict_data ON sys_dict_type.dict_type = sys_dict_data.dict_type AND sys_dict_data.status = %s 
+WHERE sys_dict_type.dict_type = %s AND sys_dict_type.status = %s ORDER BY sys_dict_data.dict_sort
+2026-03-01 20:36:11.221 | INFO     | logging:callHandlers:1736 - [cached since 0.003182s ago] ('0', 'sys_show_hide', '0')
+2026-03-01 20:36:11.223 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dict_data.dict_code, sys_dict_data.dict_sort, sys_dict_data.dict_label, sys_dict_data.dict_value, sys_dict_data.dict_type, sys_dict_data.css_class, sys_dict_data.list_class, sys_dict_data.is_default, sys_dict_data.status, sys_dict_data.create_by, sys_dict_data.create_time, sys_dict_data.update_by, sys_dict_data.update_time, sys_dict_data.remark 
+FROM sys_dict_type LEFT OUTER JOIN sys_dict_data ON sys_dict_type.dict_type = sys_dict_data.dict_type AND sys_dict_data.status = %s 
+WHERE sys_dict_type.dict_type = %s AND sys_dict_type.status = %s ORDER BY sys_dict_data.dict_sort
+2026-03-01 20:36:11.223 | INFO     | logging:callHandlers:1736 - [cached since 0.005655s ago] ('0', 'sys_normal_disable', '0')
+2026-03-01 20:36:11.226 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dict_data.dict_code, sys_dict_data.dict_sort, sys_dict_data.dict_label, sys_dict_data.dict_value, sys_dict_data.dict_type, sys_dict_data.css_class, sys_dict_data.list_class, sys_dict_data.is_default, sys_dict_data.status, sys_dict_data.create_by, sys_dict_data.create_time, sys_dict_data.update_by, sys_dict_data.update_time, sys_dict_data.remark 
+FROM sys_dict_type LEFT OUTER JOIN sys_dict_data ON sys_dict_type.dict_type = sys_dict_data.dict_type AND sys_dict_data.status = %s 
+WHERE sys_dict_type.dict_type = %s AND sys_dict_type.status = %s ORDER BY sys_dict_data.dict_sort
+2026-03-01 20:36:11.227 | INFO     | logging:callHandlers:1736 - [cached since 0.008884s ago] ('0', 'sys_job_status', '0')
+2026-03-01 20:36:11.230 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dict_data.dict_code, sys_dict_data.dict_sort, sys_dict_data.dict_label, sys_dict_data.dict_value, sys_dict_data.dict_type, sys_dict_data.css_class, sys_dict_data.list_class, sys_dict_data.is_default, sys_dict_data.status, sys_dict_data.create_by, sys_dict_data.create_time, sys_dict_data.update_by, sys_dict_data.update_time, sys_dict_data.remark 
+FROM sys_dict_type LEFT OUTER JOIN sys_dict_data ON sys_dict_type.dict_type = sys_dict_data.dict_type AND sys_dict_data.status = %s 
+WHERE sys_dict_type.dict_type = %s AND sys_dict_type.status = %s ORDER BY sys_dict_data.dict_sort
+2026-03-01 20:36:11.231 | INFO     | logging:callHandlers:1736 - [cached since 0.01295s ago] ('0', 'sys_job_group', '0')
+2026-03-01 20:36:11.233 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dict_data.dict_code, sys_dict_data.dict_sort, sys_dict_data.dict_label, sys_dict_data.dict_value, sys_dict_data.dict_type, sys_dict_data.css_class, sys_dict_data.list_class, sys_dict_data.is_default, sys_dict_data.status, sys_dict_data.create_by, sys_dict_data.create_time, sys_dict_data.update_by, sys_dict_data.update_time, sys_dict_data.remark 
+FROM sys_dict_type LEFT OUTER JOIN sys_dict_data ON sys_dict_type.dict_type = sys_dict_data.dict_type AND sys_dict_data.status = %s 
+WHERE sys_dict_type.dict_type = %s AND sys_dict_type.status = %s ORDER BY sys_dict_data.dict_sort
+2026-03-01 20:36:11.234 | INFO     | logging:callHandlers:1736 - [cached since 0.0159s ago] ('0', 'sys_job_executor', '0')
+2026-03-01 20:36:11.236 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dict_data.dict_code, sys_dict_data.dict_sort, sys_dict_data.dict_label, sys_dict_data.dict_value, sys_dict_data.dict_type, sys_dict_data.css_class, sys_dict_data.list_class, sys_dict_data.is_default, sys_dict_data.status, sys_dict_data.create_by, sys_dict_data.create_time, sys_dict_data.update_by, sys_dict_data.update_time, sys_dict_data.remark 
+FROM sys_dict_type LEFT OUTER JOIN sys_dict_data ON sys_dict_type.dict_type = sys_dict_data.dict_type AND sys_dict_data.status = %s 
+WHERE sys_dict_type.dict_type = %s AND sys_dict_type.status = %s ORDER BY sys_dict_data.dict_sort
+2026-03-01 20:36:11.236 | INFO     | logging:callHandlers:1736 - [cached since 0.01868s ago] ('0', 'sys_yes_no', '0')
+2026-03-01 20:36:11.238 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dict_data.dict_code, sys_dict_data.dict_sort, sys_dict_data.dict_label, sys_dict_data.dict_value, sys_dict_data.dict_type, sys_dict_data.css_class, sys_dict_data.list_class, sys_dict_data.is_default, sys_dict_data.status, sys_dict_data.create_by, sys_dict_data.create_time, sys_dict_data.update_by, sys_dict_data.update_time, sys_dict_data.remark 
+FROM sys_dict_type LEFT OUTER JOIN sys_dict_data ON sys_dict_type.dict_type = sys_dict_data.dict_type AND sys_dict_data.status = %s 
+WHERE sys_dict_type.dict_type = %s AND sys_dict_type.status = %s ORDER BY sys_dict_data.dict_sort
+2026-03-01 20:36:11.238 | INFO     | logging:callHandlers:1736 - [cached since 0.02054s ago] ('0', 'sys_notice_type', '0')
+2026-03-01 20:36:11.240 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dict_data.dict_code, sys_dict_data.dict_sort, sys_dict_data.dict_label, sys_dict_data.dict_value, sys_dict_data.dict_type, sys_dict_data.css_class, sys_dict_data.list_class, sys_dict_data.is_default, sys_dict_data.status, sys_dict_data.create_by, sys_dict_data.create_time, sys_dict_data.update_by, sys_dict_data.update_time, sys_dict_data.remark 
+FROM sys_dict_type LEFT OUTER JOIN sys_dict_data ON sys_dict_type.dict_type = sys_dict_data.dict_type AND sys_dict_data.status = %s 
+WHERE sys_dict_type.dict_type = %s AND sys_dict_type.status = %s ORDER BY sys_dict_data.dict_sort
+2026-03-01 20:36:11.240 | INFO     | logging:callHandlers:1736 - [cached since 0.02274s ago] ('0', 'sys_notice_status', '0')
+2026-03-01 20:36:11.242 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dict_data.dict_code, sys_dict_data.dict_sort, sys_dict_data.dict_label, sys_dict_data.dict_value, sys_dict_data.dict_type, sys_dict_data.css_class, sys_dict_data.list_class, sys_dict_data.is_default, sys_dict_data.status, sys_dict_data.create_by, sys_dict_data.create_time, sys_dict_data.update_by, sys_dict_data.update_time, sys_dict_data.remark 
+FROM sys_dict_type LEFT OUTER JOIN sys_dict_data ON sys_dict_type.dict_type = sys_dict_data.dict_type AND sys_dict_data.status = %s 
+WHERE sys_dict_type.dict_type = %s AND sys_dict_type.status = %s ORDER BY sys_dict_data.dict_sort
+2026-03-01 20:36:11.242 | INFO     | logging:callHandlers:1736 - [cached since 0.02438s ago] ('0', 'sys_oper_type', '0')
+2026-03-01 20:36:11.245 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dict_data.dict_code, sys_dict_data.dict_sort, sys_dict_data.dict_label, sys_dict_data.dict_value, sys_dict_data.dict_type, sys_dict_data.css_class, sys_dict_data.list_class, sys_dict_data.is_default, sys_dict_data.status, sys_dict_data.create_by, sys_dict_data.create_time, sys_dict_data.update_by, sys_dict_data.update_time, sys_dict_data.remark 
+FROM sys_dict_type LEFT OUTER JOIN sys_dict_data ON sys_dict_type.dict_type = sys_dict_data.dict_type AND sys_dict_data.status = %s 
+WHERE sys_dict_type.dict_type = %s AND sys_dict_type.status = %s ORDER BY sys_dict_data.dict_sort
+2026-03-01 20:36:11.246 | INFO     | logging:callHandlers:1736 - [cached since 0.0282s ago] ('0', 'sys_common_status', '0')
+2026-03-01 20:36:11.250 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dict_data.dict_code, sys_dict_data.dict_sort, sys_dict_data.dict_label, sys_dict_data.dict_value, sys_dict_data.dict_type, sys_dict_data.css_class, sys_dict_data.list_class, sys_dict_data.is_default, sys_dict_data.status, sys_dict_data.create_by, sys_dict_data.create_time, sys_dict_data.update_by, sys_dict_data.update_time, sys_dict_data.remark 
+FROM sys_dict_type LEFT OUTER JOIN sys_dict_data ON sys_dict_type.dict_type = sys_dict_data.dict_type AND sys_dict_data.status = %s 
+WHERE sys_dict_type.dict_type = %s AND sys_dict_type.status = %s ORDER BY sys_dict_data.dict_sort
+2026-03-01 20:36:11.250 | INFO     | logging:callHandlers:1736 - [cached since 0.03244s ago] ('0', 'ai_provider_type', '0')
+2026-03-01 20:36:11.254 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-03-01 20:36:11.257 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-03-01 20:36:11.258 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_config.config_id, sys_config.config_name, sys_config.config_key, sys_config.config_value, sys_config.config_type, sys_config.create_by, sys_config.create_time, sys_config.update_by, sys_config.update_time, sys_config.remark 
+FROM sys_config 
+WHERE true = 1 ORDER BY sys_config.config_id
+2026-03-01 20:36:11.258 | INFO     | logging:callHandlers:1736 - [generated in 0.00025s] ()
+2026-03-01 20:36:11.265 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-03-01 20:36:11.266 | INFO     | config.get_scheduler:init_system_scheduler:210 - 🔎 Worker 12974-a7942e 尝试获取 Application 锁...
+2026-03-01 20:36:11.268 | INFO     | config.get_scheduler:_start_scheduler_as_leader:235 - 🎯 Worker 12974-a7942e 持有 Application 锁，开始启动定时任务...
+2026-03-01 20:36:11.289 | INFO     | logging:callHandlers:1736 - Scheduler started
+2026-03-01 20:36:11.306 | INFO     | config.get_scheduler:_start_scheduler_as_leader:261 - ✅️ 系统初始定时任务加载成功
+2026-03-01 20:36:11.806 | INFO     | server:lifespan:101 - 🚀 RuoYi-FastAPI启动成功
+2026-03-01 20:36:11.808 | INFO     | server:lifespan:113 - 💻 应用地址:
+🏠 Local:    http://127.0.0.1:9099
+📡 Network:  http://192.168.100.199:9099
+2026-03-01 20:36:11.808 | INFO     | server:lifespan:120 - 📄 Swagger文档:
+🏠 Local:    http://127.0.0.1:9099/docs
+📡 Network:  http://192.168.100.199:9099/docs
+2026-03-01 20:36:11.809 | INFO     | server:lifespan:127 - 📚 ReDoc文档:
+🏠 Local:    http://127.0.0.1:9099/redoc
+📡 Network:  http://192.168.100.199:9099/redoc
+2026-03-01 20:36:36.866 | INFO     | module_admin.controller.captcha_controller:get_captcha_image:37 - 编号为49bef815-0af1-4133-86b9-cf37697a7dfb的会话获取图片验证码成功
+2026-03-01 20:36:36.875 | INFO     | module_admin.controller.captcha_controller:get_captcha_image:37 - 编号为fae958b2-9017-406e-b315-2c5aa7b1d3b8的会话获取图片验证码成功
+2026-03-01 20:36:38.609 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-03-01 20:36:38.612 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark, sys_dept.dept_id AS dept_id_1, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email AS email_1, sys_dept.status AS status_1, sys_dept.del_flag AS del_flag_1, sys_dept.create_by AS create_by_1, sys_dept.create_time AS create_time_1, sys_dept.update_by AS update_by_1, sys_dept.update_time AS update_time_1 
+FROM sys_user LEFT OUTER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.user_name = %s AND sys_user.del_flag = %s
+2026-03-01 20:36:38.613 | INFO     | logging:callHandlers:1736 - [generated in 0.00047s] ('0', '0', 'admin', '0')
+2026-03-01 20:36:38.808 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_post.post_id, sys_post.post_code, sys_post.post_name, sys_post.post_sort, sys_post.status, sys_post.create_by, sys_post.create_time, sys_post.update_by, sys_post.update_time, sys_post.remark 
+FROM sys_post 
+WHERE true = 1 ORDER BY sys_post.post_sort
+2026-03-01 20:36:38.809 | INFO     | logging:callHandlers:1736 - [generated in 0.00026s] ()
+2026-03-01 20:36:38.811 | INFO     | logging:callHandlers:1736 - SELECT sys_role.role_id, sys_role.role_name, sys_role.role_key, sys_role.role_sort, sys_role.data_scope, sys_role.menu_check_strictly, sys_role.dept_check_strictly, sys_role.status, sys_role.del_flag, sys_role.create_by, sys_role.create_time, sys_role.update_by, sys_role.update_time, sys_role.remark 
+FROM sys_role 
+WHERE sys_role.role_id != %s AND sys_role.status = %s AND sys_role.del_flag = %s
+2026-03-01 20:36:38.812 | INFO     | logging:callHandlers:1736 - [generated in 0.00015s] (1, '0', '0')
+2026-03-01 20:36:38.813 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark 
+FROM sys_user 
+WHERE sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:36:38.813 | INFO     | logging:callHandlers:1736 - [generated in 0.00017s] ('0', 1)
+2026-03-01 20:36:38.815 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dept.dept_id, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email, sys_dept.status, sys_dept.del_flag, sys_dept.create_by, sys_dept.create_time, sys_dept.update_by, sys_dept.update_time 
+FROM sys_user INNER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:36:38.815 | INFO     | logging:callHandlers:1736 - [generated in 0.00022s] ('0', '0', '0', 1)
+2026-03-01 20:36:38.817 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_role.role_id, sys_role.role_name, sys_role.role_key, sys_role.role_sort, sys_role.data_scope, sys_role.menu_check_strictly, sys_role.dept_check_strictly, sys_role.status, sys_role.del_flag, sys_role.create_by, sys_role.create_time, sys_role.update_by, sys_role.update_time, sys_role.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id INNER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s 
+WHERE sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:36:38.817 | INFO     | logging:callHandlers:1736 - [generated in 0.00017s] ('0', '0', '0', 1)
+2026-03-01 20:36:38.819 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_post.post_id, sys_post.post_code, sys_post.post_name, sys_post.post_sort, sys_post.status, sys_post.create_by, sys_post.create_time, sys_post.update_by, sys_post.update_time, sys_post.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_post ON sys_user.user_id = sys_user_post.user_id INNER JOIN sys_post ON sys_user_post.post_id = sys_post.post_id AND sys_post.status = %s 
+WHERE sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:36:38.819 | INFO     | logging:callHandlers:1736 - [generated in 0.00014s] ('0', '0', 1)
+2026-03-01 20:36:38.823 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_menu.menu_id, sys_menu.menu_name, sys_menu.parent_id, sys_menu.order_num, sys_menu.path, sys_menu.component, sys_menu.query, sys_menu.route_name, sys_menu.is_frame, sys_menu.is_cache, sys_menu.menu_type, sys_menu.visible, sys_menu.status, sys_menu.perms, sys_menu.icon, sys_menu.create_by, sys_menu.create_time, sys_menu.update_by, sys_menu.update_time, sys_menu.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id LEFT OUTER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s LEFT OUTER JOIN sys_role_menu ON sys_role.role_id = sys_role_menu.role_id INNER JOIN sys_menu ON sys_role_menu.menu_id = sys_menu.menu_id AND sys_menu.status = %s 
+WHERE sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:36:38.823 | INFO     | logging:callHandlers:1736 - [generated in 0.00027s] ('0', '0', '0', '0', 1)
+2026-03-01 20:36:38.827 | INFO     | logging:callHandlers:1736 - UPDATE sys_user SET login_date=%s WHERE sys_user.user_id = %s
+2026-03-01 20:36:38.827 | INFO     | logging:callHandlers:1736 - [generated in 0.00024s] (datetime.datetime(2026, 3, 1, 20, 36, 38, 808163), 1)
+2026-03-01 20:36:38.830 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-03-01 20:36:38.837 | INFO     | module_admin.controller.login_controller:login:78 - 登录成功
+2026-03-01 20:36:38.841 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-03-01 20:36:38.842 | INFO     | logging:callHandlers:1736 - INSERT INTO sys_logininfor (user_name, login_location, browser, os, status, msg, login_time) VALUES (%s, %s, %s, %s, %s, %s, %s)
+2026-03-01 20:36:38.843 | INFO     | logging:callHandlers:1736 - [generated in 0.00021s] ('admin', '未知', 'Chrome 145', 'Mac OS X 10', '0', '登录成功', datetime.datetime(2026, 3, 1, 20, 36, 38, 603954))
+2026-03-01 20:36:38.846 | INFO     | logging:callHandlers:1736 - COMMIT
+2026-03-01 20:36:38.857 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-03-01 20:36:38.858 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark 
+FROM sys_user 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:36:38.858 | INFO     | logging:callHandlers:1736 - [generated in 0.00033s] ('0', '0', 1)
+2026-03-01 20:36:38.862 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dept.dept_id, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email, sys_dept.status, sys_dept.del_flag, sys_dept.create_by, sys_dept.create_time, sys_dept.update_by, sys_dept.update_time 
+FROM sys_user INNER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:36:38.862 | INFO     | logging:callHandlers:1736 - [generated in 0.00026s] ('0', '0', '0', '0', 1)
+2026-03-01 20:36:38.873 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_role.role_id, sys_role.role_name, sys_role.role_key, sys_role.role_sort, sys_role.data_scope, sys_role.menu_check_strictly, sys_role.dept_check_strictly, sys_role.status, sys_role.del_flag, sys_role.create_by, sys_role.create_time, sys_role.update_by, sys_role.update_time, sys_role.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id INNER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:36:38.874 | INFO     | logging:callHandlers:1736 - [generated in 0.00122s] ('0', '0', '0', '0', 1)
+2026-03-01 20:36:38.901 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_post.post_id, sys_post.post_code, sys_post.post_name, sys_post.post_sort, sys_post.status, sys_post.create_by, sys_post.create_time, sys_post.update_by, sys_post.update_time, sys_post.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_post ON sys_user.user_id = sys_user_post.user_id INNER JOIN sys_post ON sys_user_post.post_id = sys_post.post_id AND sys_post.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:36:38.901 | INFO     | logging:callHandlers:1736 - [generated in 0.00042s] ('0', '0', '0', 1)
+2026-03-01 20:36:38.904 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_menu.menu_id, sys_menu.menu_name, sys_menu.parent_id, sys_menu.order_num, sys_menu.path, sys_menu.component, sys_menu.query, sys_menu.route_name, sys_menu.is_frame, sys_menu.is_cache, sys_menu.menu_type, sys_menu.visible, sys_menu.status, sys_menu.perms, sys_menu.icon, sys_menu.create_by, sys_menu.create_time, sys_menu.update_by, sys_menu.update_time, sys_menu.remark 
+FROM sys_menu 
+WHERE sys_menu.status = %s
+2026-03-01 20:36:38.904 | INFO     | logging:callHandlers:1736 - [generated in 0.00032s] ('0',)
+2026-03-01 20:36:38.912 | INFO     | module_admin.controller.login_controller:get_login_user_info:96 - 获取成功
+2026-03-01 20:36:38.913 | INFO     | logging:callHandlers:1736 - ROLLBACK
+2026-03-01 20:41:51.204 | INFO     | logging:callHandlers:1736 - BEGIN (implicit)
+2026-03-01 20:41:51.209 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark 
+FROM sys_user 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:41:51.211 | INFO     | logging:callHandlers:1736 - [cached since 312.3s ago] ('0', '0', 1)
+2026-03-01 20:41:51.241 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dept.dept_id, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email, sys_dept.status, sys_dept.del_flag, sys_dept.create_by, sys_dept.create_time, sys_dept.update_by, sys_dept.update_time 
+FROM sys_user INNER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:41:51.242 | INFO     | logging:callHandlers:1736 - [cached since 312.4s ago] ('0', '0', '0', '0', 1)
+2026-03-01 20:41:51.244 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_role.role_id, sys_role.role_name, sys_role.role_key, sys_role.role_sort, sys_role.data_scope, sys_role.menu_check_strictly, sys_role.dept_check_strictly, sys_role.status, sys_role.del_flag, sys_role.create_by, sys_role.create_time, sys_role.update_by, sys_role.update_time, sys_role.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id INNER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:41:51.245 | INFO     | logging:callHandlers:1736 - [cached since 312.4s ago] ('0', '0', '0', '0', 1)
+2026-03-01 20:41:51.249 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_post.post_id, sys_post.post_code, sys_post.post_name, sys_post.post_sort, sys_post.status, sys_post.create_by, sys_post.create_time, sys_post.update_by, sys_post.update_time, sys_post.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_post ON sys_user.user_id = sys_user_post.user_id INNER JOIN sys_post ON sys_user_post.post_id = sys_post.post_id AND sys_post.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:41:51.249 | INFO     | logging:callHandlers:1736 - [cached since 312.3s ago] ('0', '0', '0', 1)
+2026-03-01 20:41:51.253 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_menu.menu_id, sys_menu.menu_name, sys_menu.parent_id, sys_menu.order_num, sys_menu.path, sys_menu.component, sys_menu.query, sys_menu.route_name, sys_menu.is_frame, sys_menu.is_cache, sys_menu.menu_type, sys_menu.visible, sys_menu.status, sys_menu.perms, sys_menu.icon, sys_menu.create_by, sys_menu.create_time, sys_menu.update_by, sys_menu.update_time, sys_menu.remark 
+FROM sys_menu 
+WHERE sys_menu.status = %s
+2026-03-01 20:41:51.253 | INFO     | logging:callHandlers:1736 - [cached since 312.3s ago] ('0',)
+2026-03-01 20:41:51.263 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark 
+FROM sys_user 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:41:51.263 | INFO     | logging:callHandlers:1736 - [cached since 312.4s ago] ('0', '0', 1)
+2026-03-01 20:41:51.266 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dept.dept_id, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email, sys_dept.status, sys_dept.del_flag, sys_dept.create_by, sys_dept.create_time, sys_dept.update_by, sys_dept.update_time 
+FROM sys_user INNER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:41:51.266 | INFO     | logging:callHandlers:1736 - [cached since 312.4s ago] ('0', '0', '0', '0', 1)
+2026-03-01 20:41:51.267 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_role.role_id, sys_role.role_name, sys_role.role_key, sys_role.role_sort, sys_role.data_scope, sys_role.menu_check_strictly, sys_role.dept_check_strictly, sys_role.status, sys_role.del_flag, sys_role.create_by, sys_role.create_time, sys_role.update_by, sys_role.update_time, sys_role.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id INNER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:41:51.268 | INFO     | logging:callHandlers:1736 - [cached since 312.4s ago] ('0', '0', '0', '0', 1)
+2026-03-01 20:41:51.270 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_post.post_id, sys_post.post_code, sys_post.post_name, sys_post.post_sort, sys_post.status, sys_post.create_by, sys_post.create_time, sys_post.update_by, sys_post.update_time, sys_post.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_post ON sys_user.user_id = sys_user_post.user_id INNER JOIN sys_post ON sys_user_post.post_id = sys_post.post_id AND sys_post.status = %s 
+WHERE sys_user.status = %s AND sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:41:51.271 | INFO     | logging:callHandlers:1736 - [cached since 312.4s ago] ('0', '0', '0', 1)
+2026-03-01 20:41:51.273 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_menu.menu_id, sys_menu.menu_name, sys_menu.parent_id, sys_menu.order_num, sys_menu.path, sys_menu.component, sys_menu.query, sys_menu.route_name, sys_menu.is_frame, sys_menu.is_cache, sys_menu.menu_type, sys_menu.visible, sys_menu.status, sys_menu.perms, sys_menu.icon, sys_menu.create_by, sys_menu.create_time, sys_menu.update_by, sys_menu.update_time, sys_menu.remark 
+FROM sys_menu 
+WHERE sys_menu.status = %s
+2026-03-01 20:41:51.273 | INFO     | logging:callHandlers:1736 - [cached since 312.4s ago] ('0',)
+2026-03-01 20:41:51.286 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_user.user_id, sys_user.dept_id, sys_user.user_name, sys_user.nick_name, sys_user.user_type, sys_user.email, sys_user.phonenumber, sys_user.sex, sys_user.avatar, sys_user.password, sys_user.status, sys_user.del_flag, sys_user.login_ip, sys_user.login_date, sys_user.pwd_update_date, sys_user.create_by, sys_user.create_time, sys_user.update_by, sys_user.update_time, sys_user.remark 
+FROM sys_user 
+WHERE sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:41:51.286 | INFO     | logging:callHandlers:1736 - [cached since 312.5s ago] ('0', 1)
+2026-03-01 20:41:51.289 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_dept.dept_id, sys_dept.parent_id, sys_dept.ancestors, sys_dept.dept_name, sys_dept.order_num, sys_dept.leader, sys_dept.phone, sys_dept.email, sys_dept.status, sys_dept.del_flag, sys_dept.create_by, sys_dept.create_time, sys_dept.update_by, sys_dept.update_time 
+FROM sys_user INNER JOIN sys_dept ON sys_user.dept_id = sys_dept.dept_id AND sys_dept.status = %s AND sys_dept.del_flag = %s 
+WHERE sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:41:51.289 | INFO     | logging:callHandlers:1736 - [cached since 312.5s ago] ('0', '0', '0', 1)
+2026-03-01 20:41:51.291 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_role.role_id, sys_role.role_name, sys_role.role_key, sys_role.role_sort, sys_role.data_scope, sys_role.menu_check_strictly, sys_role.dept_check_strictly, sys_role.status, sys_role.del_flag, sys_role.create_by, sys_role.create_time, sys_role.update_by, sys_role.update_time, sys_role.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id INNER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s 
+WHERE sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:41:51.293 | INFO     | logging:callHandlers:1736 - [cached since 312.5s ago] ('0', '0', '0', 1)
+2026-03-01 20:41:51.297 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_post.post_id, sys_post.post_code, sys_post.post_name, sys_post.post_sort, sys_post.status, sys_post.create_by, sys_post.create_time, sys_post.update_by, sys_post.update_time, sys_post.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_post ON sys_user.user_id = sys_user_post.user_id INNER JOIN sys_post ON sys_user_post.post_id = sys_post.post_id AND sys_post.status = %s 
+WHERE sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:41:51.297 | INFO     | logging:callHandlers:1736 - [cached since 312.5s ago] ('0', '0', 1)
+2026-03-01 20:41:51.301 | INFO     | logging:callHandlers:1736 - SELECT DISTINCT sys_menu.menu_id, sys_menu.menu_name, sys_menu.parent_id, sys_menu.order_num, sys_menu.path, sys_menu.component, sys_menu.query, sys_menu.route_name, sys_menu.is_frame, sys_menu.is_cache, sys_menu.menu_type, sys_menu.visible, sys_menu.status, sys_menu.perms, sys_menu.icon, sys_menu.create_by, sys_menu.create_time, sys_menu.update_by, sys_menu.update_time, sys_menu.remark 
+FROM sys_user LEFT OUTER JOIN sys_user_role ON sys_user.user_id = sys_user_role.user_id LEFT OUTER JOIN sys_role ON sys_user_role.role_id = sys_role.role_id AND sys_role.status = %s AND sys_role.del_flag = %s LEFT OUTER JOIN sys_role_menu ON sys_role.role_id = sys_role_menu.role_id INNER JOIN sys_menu ON sys_role_menu.menu_id = sys_menu.menu_id AND sys_menu.status = %s 
+WHERE sys_user.del_flag = %s AND sys_user.user_id = %s
+2026-03-01 20:41:51.301 | INFO     | logging:callHandlers:1736 - [cached since 312.5s ago] ('0', '0', '0', '0', 1)
+2026-03-01 20:41:51.303 | INFO     | module_admin.controller.user_controller:query_detail_system_user_profile:269 - 获取user_id为1的信息成功
+2026-03-01 20:41:51.305 | INFO     | logging:callHandlers:1736 - ROLLBACK
